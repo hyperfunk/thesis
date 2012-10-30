@@ -7,7 +7,7 @@ RM=rm
 
 .SUFFIXES: .pdf .md .template
 
-%.pdf: %.md
+%.pdf: %.md %.template
 	$(TEX) $(TEXFLAGS) --template $(patsubst %.md,%.template,$<) -o $@ $<
 
 PDFS=outline.pdf
