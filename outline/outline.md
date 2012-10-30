@@ -61,6 +61,12 @@ def test()
     myObj.method(globals(),True,None,literal, f)
 ```
 
+(@foo1) $$x^2_{lol} = \frac{\partial x}{\partial y}$$
+(@foo2) $$x^2_{lol} = \frac{\partial x}{\partial y}$$
+
+
+Im going to reference @foo1
+
 ---
 
 ## Future prospects for SUSY / BSM
