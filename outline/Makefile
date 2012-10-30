@@ -5,12 +5,11 @@ RM=rm
 
 .SUFFIXES:
 
-.SUFFIXES: .pdf .md
+.SUFFIXES: .pdf .md .template
 
-.md.pdf :
-	$(TEX) $(TEXFLAGS) --template $(TEMPLATE) -o $@ $<
+%.pdf: %.md
+	$(TEX) $(TEXFLAGS) --template $(patsubst %.md,%.template,$<) -o $@ $<
 
-TEMPLATE=outline.template
 PDFS=outline.pdf
 
 all: $(PDFS)
