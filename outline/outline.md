@@ -59,7 +59,9 @@
 - LHC-era constraints:
     * MET, Bsmumu, Xenon 
     * Effect of direct searches, progressive (37pb->5fb)
-    * State of play (best fit particle spectra, etc.)
+    * Bestfit / benchmark scenarios (work with AbdusSalam et al)
+    * State of play (best fit particle spectra, etc. progressive)
+    * Comparison of spectra to SMS
     * Most sensitive now to...
 
 - Universal / Two scale model prospects
