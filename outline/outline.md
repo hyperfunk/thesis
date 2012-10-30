@@ -52,24 +52,28 @@
 
 ## Constraining models of SUSY
 
-- Standard constraints
-    * Omega h^2
+- Existing constraints:
+    * EWPOs , bphysics, dark matter, lep higgs
+    * Current state of models
 
+- LHC-era constraints:
+    * MET, Bsmumu, Xenon 
+    * Effect of direct searches, progressive (37pb->5fb)
+    * State of play (best fit particle spectra, etc.)
+    * Most sensitive now to...
 
-```python
-def test()
-    myObj.method(globals(),True,None,literal, f)
-```
+- Universal / Two scale model prospects
 
-(@foo1) $$x^2_{lol} = \frac{\partial x}{\partial y}$$
-(@foo2) $$x^2_{lol} = \frac{\partial x}{\partial y}$$
+- Reach of LHC (neutralino mass -> MET, production mech: glu, squ)
 
-
-Im going to reference @foo1
 
 ---
 
 ## Future prospects for SUSY / BSM
+
+- cMSSM / two scales: mostly flat, NUHM2 only real "predictive"
+- Might not be something universal / RGE motivated: 
+    * pMSSM
 
 
 ---
