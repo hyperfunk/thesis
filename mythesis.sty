@@ -1,0 +1,83 @@
+\ProvidesPackage{mythesis}[2005/07/28]
+\RequirePackage{hepnicenames,hepunits}
+\RequirePackage{acronym}
+
+% Acronyms
+% \acrodef{label}[acronym]{written out form},
+% for example:
+% \acrodef{etacar}[$\eta$ Car]{Eta Carinae}
+
+% Acronyms - Physics
+\acrodef{QCD}[QCD]{Quantum Chromodynamics}
+\acrodef{EWK}[EWK]{Electroweak}
+\acrodef{SM}[SM]{Standard Model}
+\acrodef{PDF}[PDF]{Parton Density Function}
+\acrodef{DY}[DY]{Drell-Yan}
+\acrodef{LO}[LO]{Leading Order}
+\acrodef{NLO}[NLO]{Next to Leading Order}
+\acrodef{NNLO}[NNLO]{Next to Next to Leading Order}
+
+% Acronyms - Techniques
+\acrodef{MC}[MC]{Monte Carlo}
+\acrodef{CL}[CL]{Confidence Level}
+
+% Acronyms - Experimental
+\acrodef{CMS}[CMS]{Compact Muon Solenoid}
+\acrodef{ATLAS}[ATLAS]{ATLAS}%todo change
+\acrodef{LHC}[LHC]{LHC}%todo change
+\acrodef{ECAL}[ECAL]{Electromagnetic Calorimeter}
+
+
+% Some shorthand
+% turn off italics
+\newcommand {\etal}{\mbox{et al.}\xspace} %et al. - no preceding comma
+\newcommand {\ie}{\mbox{i.e.}\xspace}     %i.e.
+\newcommand {\eg}{\mbox{e.g.}\xspace}     %e.g.
+\newcommand {\etc}{\mbox{etc.}\xspace}     %etc.
+\newcommand {\vs}{\mbox{\sl vs.}\xspace}      %vs.
+\newcommand {\mdash}{\ensuremath{\mathrm{-}}} % for use within formulas
+
+%% General utility defns
+\DeclareRobustCommand{\purity}{\thesismath{p}\xspace}
+\DeclareRobustCommand{\luminosity}{\thesismath{\mathcal{L}}\xspace}
+\DeclareRobustCommand{\sqrtS}{\thesismath{\sqrt{s}}\xspace}
+
+%% Processes
+\DeclareRobustCommand{\X}{\thesismath{X}\xspace}
+\DeclareRobustCommand{\Xbar}{\thesismath{\overline{X}}\xspace}
+\DeclareRobustCommand{\inclusiveWe}{\HepProcess{\Pproton\Pproton\to\PW(\Pe\Pnu)+\X}\xspace}
+\DeclareRobustCommand{\inclusiveW}{\HepProcess{\Pproton\Pproton\to\PW(\Plepton\Pnu)+\X}\xspace}
+\DeclareRobustCommand{\Wenu}{\HepProcess{\PW\to\Pe\Pnu}\xspace}
+\DeclareRobustCommand{\Wmenu}{\HepProcess{\PWp\to\Pelectron\Pnu}\xspace}
+\DeclareRobustCommand{\Wpenu}{\HepProcess{\PWm\to\APelectron\Pnu}\xspace}
+\DeclareRobustCommand{\Wlnu}{\HepProcess{\PW\to\Plepton\Pnu}\xspace}
+\DeclareRobustCommand{\Zee}{\HepProcess{\PZ\to\Pe\Pe}\xspace}
+\DeclareRobustCommand{\Ztt}{\HepProcess{\PZ\to\Ptau\Ptau}\xspace}
+\DeclareRobustCommand{\Zll}{\HepProcess{\PZ\to\Plepton\Plepton}\xspace}
+\DeclareRobustCommand{\QCD}{QCD\xspace} % TODO remove this
+\DeclareRobustCommand{\EWK}{Electroweak\xspace} % TODO remove this
+\DeclareRobustCommand{\gjet}{\HepProcess{\Pphoton + jet}\xspace}
+
+
+% Physics symbols ...
+\newcommand{\PT}{\ensuremath{p_{\mathrm{T}}}\xspace}
+\newcommand{\pt}{\PT}
+\newcommand{\Pt}{\PT}
+\newcommand{\pT}{\PT}% for convenience because I'm an idiot
+\newcommand{\ET}{\ensuremath{E_{\mathrm{T}}}\xspace}
+\newcommand{\HT}{\ensuremath{H_{\mathrm{T}}}\xspace}
+\newcommand{\HTm}{\ensuremath{H_{\mathrm{T}}^{\text{miss}}}\xspace}
+\newcommand{\MHT}{\HTm}
+
+\newcommand{\et}{\ensuremath{E_{\mathrm{T}}}\xspace}
+\newcommand{\Em}{\ensuremath{E\hspace{-0.6em}/}\xspace}
+\newcommand{\Pm}{\ensuremath{p\hspace{-0.5em}/}\xspace}
+\newcommand{\PTm}{\ensuremath{{p}_\mathrm{T}\hspace{-1.02em}/}\xspace}
+\newcommand{\PTslash}{\ensuremath{{p}_\mathrm{T}\hspace{-1.02em}/}\xspace}
+\newcommand{\ETm}{\ensuremath{E_{\mathrm{T}}^{\text{miss}}}\xspace}
+\newcommand{\MET}{\ETm}
+\newcommand{\met}{\ETm}
+\newcommand{\ETmiss}{\ETm}% for convenience because I'm still an idiot
+\newcommand{\ETslash}{\ensuremath{E_{\mathrm{T}}\hspace{-1.1em}/}\xspace}
+\newcommand{\VEtmiss}{\ensuremath{{\vec E}_{\mathrm{T}}^{\text{miss}}}\xspace}
+
