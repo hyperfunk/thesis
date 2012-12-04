@@ -3,7 +3,7 @@
 
 INPUT  = thesis
 DATE   = $(shell date "+%d%b")
-OUTPUT = thesis_draft_$(DATE)
+OUTPUT = drafts/thesis_draft_$(DATE)
 
 TEX = pdflatex -interaction nonstopmode -jobname $(OUTPUT)
 BIB = bibtex
