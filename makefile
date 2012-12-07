@@ -7,7 +7,7 @@ OUTPUT = drafts/thesis_draft_$(DATE)
 
 TEX = pdflatex -interaction nonstopmode -jobname $(OUTPUT)
 BIB = bibtex
-VIEW = mupdf
+VIEW = zathura
 
 $(OUTPUT).pdf: $(INPUT).tex chapters/*.tex
 	( \
