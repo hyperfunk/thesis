@@ -24,7 +24,7 @@ clean::
 	rm -fv *.aux chapters/*.aux *.log *.bbl *.blg *.toc *.fls *.cut *.out *.lot *.lof thesis_*.pdf
 
 show: $(OUTPUT).pdf
-	$(VIEW) $(OUTPUT).pdf
+	$(VIEW) $(OUTPUT).pdf &
 
 test::
 	$(TEX) -draftmode $(INPUT)
