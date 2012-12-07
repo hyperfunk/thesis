@@ -9,7 +9,7 @@ TEX = pdflatex -interaction nonstopmode -jobname $(OUTPUT)
 BIB = bibtex
 VIEW = zathura
 
-$(OUTPUT).pdf: $(INPUT).tex chapters/*.tex
+$(OUTPUT).pdf: $(INPUT).tex mythesis.sty chapters/*.tex
 	( \
 	$(TEX) $(INPUT); \
 	$(BIB) $(OUTPUT); \
