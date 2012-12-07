@@ -39,3 +39,4 @@ spell:
 summary:
 	texcount.pl -inc -html -v -sum $(INPUT).tex > \
 		$(OUTPUT).html
+	chromium --app=file://$(CURDIR)/$(OUTPUT).html
