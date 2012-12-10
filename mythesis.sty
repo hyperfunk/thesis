@@ -31,7 +31,14 @@
 \DeclareRobustCommand{\QCD}{QCD\xspace} % TODO remove this
 \DeclareRobustCommand{\EWK}{Electroweak\xspace} % TODO remove this
 \DeclareRobustCommand{\gjet}{\HepProcess{\Pphoton + jet}\xspace}
+\DeclareRobustCommand{\Bsmumu}{\HepProcess{\PBs\to\Pmu\Pmu}\xspace}
+\DeclareRobustCommand{\Btaunu}{\HepProcess{\PB\to\Ptau\Pnu}\xspace}
+\DeclareRobustCommand{\BXsll}{\HepProcess{\X_{s}\to\Plepton\Plepton}\xspace}
+\DeclareRobustCommand{\Kmunu}{\HepProcess{\K\to\Pmu\Pnu}\xspace}
+\DeclareRobustCommand{\bsg}{\HepProcess{\Pbottom\to\Pstrange\Pphoton}\xspace}
 
+% shorten typing out parentheses
+\newcommand{\parenths}[1]{\ensuremath{\left(#1\right)}}
 
 % Physics symbols ...
 \newcommand{\PT}{\ensuremath{p_{\mathrm{T}}}\xspace}
@@ -56,7 +63,10 @@
 \newcommand{\VEtmiss}{\ensuremath{{\vec E}_{\mathrm{T}}^{\text{miss}}}\xspace}
 \newcommand{\aT}{\ensuremath{\alpha_{T}$\xspace}}
 
-\newcommand{\Bsmumu}{\ensuremath{B_{s}\rightarrow\mu^{+}\mu^{-}}}
+\newcommand{\BR}[1]{\ensuremath{\textrm{BR}\parenths{#1}}}
+\newcommand{\R}[1]{\ensuremath{\textrm{R}\parenths{#1}}}
+\newcommand{\BRexpSM}[1]{\ensuremath{\textrm{BR}^{\textrm{EXP/SM}}_{#1}}}
+
 
 % Acronyms
 % \acrodef{label}[acronym]{written out form},
@@ -68,15 +78,18 @@
 \acrodef{EWK}[EWK]{Electroweak}
 \acrodef{SUSY}[SUSY]{Supersymmetry}
 \acrodef{SM}[SM]{Standard Model}
+\acrodef{BSM}[BSM]{Beyond \acl{SM}}
 \acrodef{PDF}[PDF]{Parton Density Function}
 \acrodef{DY}[DY]{Drell-Yan}
 \acrodef{LO}[LO]{Leading Order}
 \acrodef{NLO}[NLO]{Next to Leading Order}
 \acrodef{NNLO}[NNLO]{Next to Next to Leading Order}
-\acrodef{EWPO}[EWPO]{Electroweak Precision Observables}
+\acrodef{EWPO}[EWPO]{Electroweak Precision Observable}
+\acrodef{BPO}[BPO]{B-Physics Observable}
 \acrodef{DM}[DM]{Dark Matter}
 \acrodef{RGE}[RGE]{Renormalization Group Equation}
 \acrodef{LSP}[LSP]{Lightest Supersymmetric Particle}
+\acrodef{FCNC}[FCNC]{Flavour Changing Neutral Current}
 
 % Acronyms - Techniques
 \acrodef{MC}[MC]{Monte Carlo}
