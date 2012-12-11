@@ -1,6 +1,6 @@
 \ProvidesPackage{mythesis}[2005/07/28]
 \RequirePackage{hepnicenames,hepunits}
-\RequirePackage{acronym}
+\RequirePackage{acronym,subcaption,caption}
 
 % Some shorthand
 % turn off italics
@@ -42,13 +42,13 @@
 
 % Physics symbols ...
 \newcommand{\PT}{\ensuremath{p_{\mathrm{T}}}\xspace}
-\newcommand{\pt}{\PT}
-\newcommand{\Pt}{\PT}
+\newcommand{\pt}{\PT\xspace}
+\newcommand{\Pt}{\PT\xspace}
 \newcommand{\pT}{\PT}% for convenience because I'm an idiot
 \newcommand{\ET}{\ensuremath{E_{\mathrm{T}}}\xspace}
 \newcommand{\HT}{\ensuremath{H_{\mathrm{T}}}\xspace}
 \newcommand{\HTm}{\ensuremath{H_{\mathrm{T}}^{\text{miss}}}\xspace}
-\newcommand{\MHT}{\HTm}
+\newcommand{\MHT}{\HTm\xspace}
 
 \newcommand{\et}{\ensuremath{E_{\mathrm{T}}}\xspace}
 \newcommand{\Em}{\ensuremath{E\hspace{-0.6em}/}\xspace}
@@ -56,17 +56,56 @@
 \newcommand{\PTm}{\ensuremath{{p}_\mathrm{T}\hspace{-1.02em}/}\xspace}
 \newcommand{\PTslash}{\ensuremath{{p}_\mathrm{T}\hspace{-1.02em}/}\xspace}
 \newcommand{\ETm}{\ensuremath{E_{\mathrm{T}}^{\text{miss}}}\xspace}
-\newcommand{\MET}{\ETm}
-\newcommand{\met}{\ETm}
+\newcommand{\MET}{\ETm\xspace}
+\newcommand{\met}{\ETm\xspace}
 \newcommand{\ETmiss}{\ETm}% for convenience because I'm still an idiot
 \newcommand{\ETslash}{\ensuremath{E_{\mathrm{T}}\hspace{-1.1em}/}\xspace}
 \newcommand{\VEtmiss}{\ensuremath{{\vec E}_{\mathrm{T}}^{\text{miss}}}\xspace}
 \newcommand{\aT}{\ensuremath{\alpha_{T}$\xspace}}
 
-\newcommand{\BR}[1]{\ensuremath{\textrm{BR}\parenths{#1}}}
-\newcommand{\R}[1]{\ensuremath{\textrm{R}\parenths{#1}}}
-\newcommand{\BRexpSM}[1]{\ensuremath{\textrm{BR}^{\textrm{EXP/SM}}_{#1}}}
+\newcommand{\BR}[1]{\ensuremath{\textrm{BR}\parenths{#1}}\xspace}
+\newcommand{\R}[1]{\ensuremath{\textrm{R}\parenths{#1}}\xspace}
+\newcommand{\BRexpSM}[1]{\ensuremath{\textrm{BR}^{\textrm{EXP/SM}}_{#1}}\xspace}
 
+\newcommand{\OCDM}{\ensuremath{\Omega_{c}h^{2}}\xspace}
+\newcommand{\spsi}{\ensuremath{\sigma_{p}^{\textrm{SI}}}\xspace}
+\newcommand{\neu}[1]{\ensuremath{\tilde{\chi}^{0}_{#1}}\xspace}
+\newcommand{\cha}[1]{\ensuremath{\tilde{\chi}^{\pm}_{#1}}\xspace}
+\newcommand{\mass}[1]{\ensuremath{m_{#1}}\xspace}
+\newcommand{\m}[1]{\mass{#1}}
+
+\newcommand{\CL}{\ensuremath{\textrm{CL}}\xspace}
+
+\newcommand{\m0m12}{\ensuremath{m_{0},m_{1/2}}}
+
+\newcommand{\lhoodbase}{%
+    \ensuremath{%
+    \sum_{i}^{N}\frac{\left(C_{i}-P_{i}\right)^{2}} 
+        {\sigma\left(C_{i}\right)^{2}+\sigma\left(P_{i}\right)^{2}} 
+    }\xspace
+}
+\newcommand{\lhoodsm}{%
+    \ensuremath{%
+    \sum_{i}^{M}\frac{\left(f^{\textrm{obs}}_{\textrm{SM}_{i}} -
+            f^{\textrm{SUSY}}_{\textrm{SM}_{i}}\right)^{2}}
+        {\sigma\left(f_{\textrm{SM}_{i}}\right)^{2}}
+    }\xspace
+}
+\newcommand{\lhoodxenon}{%
+    \ensuremath{%
+        \chi^{2}\parenths{\mass{\neu{1}},\ \spsi}
+    }\xspace
+}
+\newcommand{\lhoodmh}{%
+    \ensuremath{%
+        \chi^{2}\parenths{\mass{h^{0}}}
+    }\xspace
+}
+\newcommand{\lhoodsusysearch}{%
+    \ensuremath{%
+        \chi^{2}\parenths{\textrm{SUSY search limits}}
+    }\xspace
+}
 
 % Acronyms
 % \acrodef{label}[acronym]{written out form},
@@ -77,8 +116,6 @@
 \acrodef{QCD}[QCD]{Quantum Chromodynamics}
 \acrodef{EWK}[EWK]{Electroweak}
 \acrodef{SUSY}[SUSY]{Supersymmetry}
-\acrodef{SM}[SM]{Standard Model}
-\acrodef{BSM}[BSM]{Beyond \acl{SM}}
 \acrodef{PDF}[PDF]{Parton Density Function}
 \acrodef{DY}[DY]{Drell-Yan}
 \acrodef{LO}[LO]{Leading Order}
@@ -87,18 +124,32 @@
 \acrodef{EWPO}[EWPO]{Electroweak Precision Observable}
 \acrodef{BPO}[BPO]{B-Physics Observable}
 \acrodef{DM}[DM]{Dark Matter}
+\acrodef{CMB}[CMB]{Cosmic Microwave Background}
+\acrodef{CDM}[CDM]{Cold \ac{DM}}
+\acrodef{LCDM}[LCDM]{\ensuremath{\Lambda}\ac{CDM}}
 \acrodef{RGE}[RGE]{Renormalization Group Equation}
 \acrodef{LSP}[LSP]{Lightest Supersymmetric Particle}
 \acrodef{FCNC}[FCNC]{Flavour Changing Neutral Current}
 
 % Acronyms - Techniques
 \acrodef{MC}[MC]{Monte Carlo}
-\acrodef{CL}[CL]{Confidence Level}
+\acrodef{CL}[\CL]{Confidence Level}
 
 % Acronyms - Experimental
 \acrodef{CMS}[CMS]{Compact Muon Solenoid}
 \acrodef{ATLAS}[ATLAS]{A Toroidal LHC Apparatus}
 \acrodef{LHC}[LHC]{Large Hadron Collider}
-\acrodef{LEP}[LEP]{Large Electron–Positron Collider}
+\acrodef{LEP}[LEP]{Large Electron Positron Collider}
 \acrodef{ECAL}[ECAL]{Electromagnetic Calorimeter}
 \acrodef{MET}[\MET]{Missing Transverse Energy}
+
+% Acronyms - Models
+\acrodef{SM}[SM]{Standard Model}
+\acrodef{BSM}[BSM]{Beyond \acl{SM}}
+\acrodef{MSSM}[MSSM]{Minimal Supersymmetric \acl{SM}}
+\acrodef{cMSSM}[cMSSM]{constrained \acl{MSSM}}
+\acrodef{vcMSSM}[vcMSSM]{very constrained \acl{MSSM}}
+\acrodef{mSUGRA}[mSUGRA]{minial Super Gravity}
+\acrodef{pMSSM}[pMSSM]{phenomenological \acl{MSSM}}
+\acrodef{NUHM}[NUHM]{Non-Universal Higgs Model}
+\acrodef{SMS}[SMS]{Simplied Model Spectra}
