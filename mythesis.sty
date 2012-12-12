@@ -18,18 +18,6 @@
 
 %% Processes
 \DeclareRobustCommand{\X}{\thesismath{X}\xspace}
-\DeclareRobustCommand{\Xbar}{\thesismath{\overline{X}}\xspace}
-\DeclareRobustCommand{\inclusiveWe}{\HepProcess{\Pproton\Pproton\to\PW(\Pe\Pnu)+\X}\xspace}
-\DeclareRobustCommand{\inclusiveW}{\HepProcess{\Pproton\Pproton\to\PW(\Plepton\Pnu)+\X}\xspace}
-\DeclareRobustCommand{\Wenu}{\HepProcess{\PW\to\Pe\Pnu}\xspace}
-\DeclareRobustCommand{\Wmenu}{\HepProcess{\PWp\to\Pelectron\Pnu}\xspace}
-\DeclareRobustCommand{\Wpenu}{\HepProcess{\PWm\to\APelectron\Pnu}\xspace}
-\DeclareRobustCommand{\Wlnu}{\HepProcess{\PW\to\Plepton\Pnu}\xspace}
-\DeclareRobustCommand{\Zee}{\HepProcess{\PZ\to\Pe\Pe}\xspace}
-\DeclareRobustCommand{\Ztt}{\HepProcess{\PZ\to\Ptau\Ptau}\xspace}
-\DeclareRobustCommand{\Zll}{\HepProcess{\PZ\to\Plepton\Plepton}\xspace}
-\DeclareRobustCommand{\QCD}{QCD\xspace} % TODO remove this
-\DeclareRobustCommand{\EWK}{Electroweak\xspace} % TODO remove this
 \DeclareRobustCommand{\gjet}{\HepProcess{\Pphoton + jet}\xspace}
 \DeclareRobustCommand{\Bsmumu}{\HepProcess{\PBs\to\Pmu\Pmu}\xspace}
 \DeclareRobustCommand{\Btaunu}{\HepProcess{\PB\to\Ptau\Pnu}\xspace}
@@ -42,25 +30,10 @@
 
 % Physics symbols ...
 \newcommand{\PT}{\ensuremath{p_{\mathrm{T}}}\xspace}
-\newcommand{\pt}{\PT\xspace}
-\newcommand{\Pt}{\PT\xspace}
-\newcommand{\pT}{\PT}% for convenience because I'm an idiot
-\newcommand{\ET}{\ensuremath{E_{\mathrm{T}}}\xspace}
 \newcommand{\HT}{\ensuremath{H_{\mathrm{T}}}\xspace}
 \newcommand{\HTm}{\ensuremath{H_{\mathrm{T}}^{\text{miss}}}\xspace}
-\newcommand{\MHT}{\HTm\xspace}
-
-\newcommand{\et}{\ensuremath{E_{\mathrm{T}}}\xspace}
-\newcommand{\Em}{\ensuremath{E\hspace{-0.6em}/}\xspace}
-\newcommand{\Pm}{\ensuremath{p\hspace{-0.5em}/}\xspace}
-\newcommand{\PTm}{\ensuremath{{p}_\mathrm{T}\hspace{-1.02em}/}\xspace}
-\newcommand{\PTslash}{\ensuremath{{p}_\mathrm{T}\hspace{-1.02em}/}\xspace}
-\newcommand{\ETm}{\ensuremath{E_{\mathrm{T}}^{\text{miss}}}\xspace}
-\newcommand{\MET}{\ETm\xspace}
-\newcommand{\met}{\ETm\xspace}
-\newcommand{\ETmiss}{\ETm}% for convenience because I'm still an idiot
-\newcommand{\ETslash}{\ensuremath{E_{\mathrm{T}}\hspace{-1.1em}/}\xspace}
-\newcommand{\VEtmiss}{\ensuremath{{\vec E}_{\mathrm{T}}^{\text{miss}}}\xspace}
+\newcommand{\ET}{\ensuremath{E_{\mathrm{T}}}\xspace}
+\newcommand{\MET}{\ensuremath{\ET^{\text{miss}}}\xspace}
 \newcommand{\aT}{\ensuremath{\alpha_{T}$\xspace}}
 
 \newcommand{\BR}[1]{\ensuremath{\textrm{BR}\parenths{#1}}\xspace}
@@ -69,14 +42,10 @@
 
 \newcommand{\OCDM}{\ensuremath{\Omega_{c}h^{2}}\xspace}
 \newcommand{\spsi}{\ensuremath{\sigma_{p}^{\textrm{SI}}}\xspace}
-\newcommand{\neu}[1]{\ensuremath{\tilde{\chi}^{0}_{#1}}\xspace}
-\newcommand{\cha}[1]{\ensuremath{\tilde{\chi}^{\pm}_{#1}}\xspace}
 \newcommand{\mass}[1]{\ensuremath{m_{#1}}\xspace}
 \newcommand{\m}[1]{\mass{#1}}
-\newcommand{\slepton}{\ensuremath{\tilde{\ell}^{\pm}}}
-\newcommand{\sneutrino}{\ensuremath{\tilde{\nu}}}
-\newcommand{\squark}{\ensuremath{\tilde{q}}}
 
+\newcommand{\tanbeta}{\ensuremath{\tan{\beta}}\xspace}
 \newcommand{\mZeromHalf}{\m{0},\m{1/2}}
 
 % Stats and equations
@@ -96,18 +65,50 @@
 }
 \newcommand{\lhoodxenon}{%
     \ensuremath{%
-        \chi^{2}\parenths{\mass{\neu{1}},\ \spsi}
+        \chi^{2}\parenths{\mass{\PSneutralinoOne},\ \spsi}
     }\xspace
 }
 \newcommand{\lhoodmh}{%
     \ensuremath{%
-        \chi^{2}\parenths{\mass{h^{0}}}
+        \chi^{2}\parenths{\mass{\PHiggslightzero}}
     }\xspace
 }
 \newcommand{\lhoodsusysearch}{%
     \ensuremath{%
         \chi^{2}\parenths{\textrm{SUSY search limits}}
     }\xspace
+}
+\newcommand{\pspacetable}[3]{%
+    \begin{figure}[h]
+        \centering
+        \begin{subfigure}[]{0.45\textwidth}
+            \centering
+            \caption{\ac{NUHM}2}
+            \label{fig:nuhm2#1}
+        \end{subfigure}
+        \begin{subfigure}[]{0.45\textwidth}
+            \centering
+            \caption{\ac{NUHM}1}
+            \label{fig:nuhm1#1}
+        \end{subfigure}
+        \begin{subfigure}[]{0.45\textwidth}
+            \centering
+            \caption{\ac{cMSSM}}
+            \label{fig:cmssm#1}
+        \end{subfigure}
+        \begin{subfigure}[]{0.45\textwidth}
+            \centering
+            \caption{\ac{vcMSSM}}
+            \label{fig:vcmssm#1}
+        \end{subfigure}
+        \begin{subfigure}[]{0.45\textwidth}
+            \centering
+            \caption{\ac{mSUGRA}}
+            \label{fig:mSUGRA#1}
+        \end{subfigure}
+        \caption[#2]{#3}
+        \label{fig:#1}
+    \end{figure}
 }
 
 % Acronyms
