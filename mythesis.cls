@@ -154,6 +154,7 @@
 %% In-document references
 \DeclareRobustCommand{\Chapter}{Chapter\xspace}
 \DeclareRobustCommand{\Section}{Section\xspace}
+\DeclareRobustCommand{\Sections}{Sections\xspace}
 \DeclareRobustCommand{\Appendix}{Appendix\xspace}
 \DeclareRobustCommand{\Figure}{Figure\xspace}
 \DeclareRobustCommand{\Table}{Table\xspace}

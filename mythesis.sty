@@ -1,6 +1,6 @@
 \ProvidesPackage{mythesis}[2005/07/28]
 \RequirePackage{hepnicenames,hepunits}
-\RequirePackage{acronym,subcaption,caption}
+\RequirePackage{acronym,subcaption,caption,todonotes}
 
 % Some shorthand
 % turn off italics
@@ -25,6 +25,9 @@
 \DeclareRobustCommand{\Kmunu}{\HepProcess{\K\to\Pmu\Pnu}\xspace}
 \DeclareRobustCommand{\bsg}{\HepProcess{\Pbottom\to\Pstrange\Pphoton}\xspace}
 \DeclareRobustCommand{\Htt}{\HepProcess{\PHiggsheavy\to\Ptau\Ptau}\xspace}
+
+% define an inline todo command
+\newcommand{\todoi}[1]{\todo[inline]{#1}}
 
 % shorten typing out parentheses
 \newcommand{\parenths}[1]{\ensuremath{\left(#1\right)}}
@@ -76,7 +79,7 @@
 }
 \newcommand{\lhoodmh}{%
     \ensuremath{%
-        \chi^{2}\parenths{\mass{\PHiggslightzero}}
+        \chi^{2}_{\textrm{LEP}}\parenths{\mass{\PHiggslightzero}}
     }\xspace
 }
 \newcommand{\lhoodsusysearch}{%
@@ -84,31 +87,57 @@
         \chi^{2}\parenths{\textrm{SUSY search limits}}
     }\xspace
 }
+\newcommand{\lhooddirects}{%
+    \ensuremath{%
+        \chi^{2}\parenths{\textrm{Direct Searches}}
+    }\xspace
+}
+\newcommand{\lhoodbsmumu}{%
+    \ensuremath{%
+        \chi^{2}\parenths{\BR{\Bsmumu}}
+    }\xspace
+}
+\newcommand{\lhoodheavyhiggs}{%
+    \ensuremath{%
+        \chi^{2}\parenths{\PHiggsheavy\rightarrow\Ptau\Ptau}
+    }\xspace
+}
+\newcommand{\lhoodmhcms}{%
+    \ensuremath{%
+        \chi^{2}\parenths{\mathcal{G}\parenths{\m{\PHiggslightzero}}}
+    }\xspace
+}
+
 \newcommand{\pspacetable}[3]{%
-    \begin{figure}[h]
+    \begin{figure}[ht]
         \centering
         \begin{subfigure}[]{0.45\textwidth}
             \centering
+            \missingfigure{NUHM2}
             \caption{\ac{NUHM}2}
             \label{fig:nuhm2#1}
         \end{subfigure}
         \begin{subfigure}[]{0.45\textwidth}
             \centering
+            \missingfigure{NUHM1}
             \caption{\ac{NUHM}1}
             \label{fig:nuhm1#1}
         \end{subfigure}
         \begin{subfigure}[]{0.45\textwidth}
             \centering
+            \missingfigure{cMSSM}
             \caption{\ac{cMSSM}}
             \label{fig:cmssm#1}
         \end{subfigure}
         \begin{subfigure}[]{0.45\textwidth}
             \centering
+            \missingfigure{vcMSSM}
             \caption{\ac{vcMSSM}}
             \label{fig:vcmssm#1}
         \end{subfigure}
         \begin{subfigure}[]{0.45\textwidth}
             \centering
+            \missingfigure{mSUGRA}
             \caption{\ac{mSUGRA}}
             \label{fig:mSUGRA#1}
         \end{subfigure}
