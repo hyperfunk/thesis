@@ -61,11 +61,20 @@
 \newcommand{\mHsigmaBR}{\ensuremath{\m{\PHiggsheavy},\sigmaBR}\xspace}
 
 % Stats and equations
-\newcommand{\CL}{\ensuremath{\textrm{CL}}\xspace}
+\newcommand{\CL}[1]{
+    \ensuremath{
+        #1\%~\textrm{\ac{CL}}
+    }\xspace
+}
 \newcommand{\LHCbBsmumuValue}{
     \ensuremath{
         \parenths{3.2^{+1.5}_{-1.2}}\times 10^{-9}
         }\xspace
+}
+\newcommand{\CMSBsmumuValue}{
+    \ensuremath{
+        7.7\times 10^{-9}
+    }\xspace
 }
 \newcommand{\SMBsmumuValue}{
     \ensuremath{
@@ -186,7 +195,7 @@
 
 % Acronyms - Techniques
 \acrodef{MC}[MC]{Monte Carlo}
-\acrodef{CL}[\CL]{Confidence Level}
+\acrodef{CL}[CL]{Confidence Level}
 
 % Acronyms - Experimental
 \acrodef{CMS}[CMS]{Compact Muon Solenoid}
