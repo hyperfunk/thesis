@@ -25,6 +25,10 @@
 \DeclareRobustCommand{\Kmunu}{\HepProcess{\K\to\Pmu\Pnu}\xspace}
 \DeclareRobustCommand{\bsg}{\HepProcess{\Pbottom\to\Pstrange\Pphoton}\xspace}
 \DeclareRobustCommand{\Htt}{\HepProcess{\PHiggsheavy\to\Ptau\Ptau}\xspace}
+\DeclareRobustCommand{\Htt}{\HepProcess{\PHiggsheavy\to\Ptau\Ptau}\xspace}
+\DeclareRobustCommand{\bbHSM}{
+    \HepProcess{\Pbottom\APbottom\to\PHiggsheavy_{\textrm{SM}}}\xspace
+}
 
 % define an inline todo command
 \newcommand{\todoi}[1]{\todo[inline]{#1}}
@@ -32,8 +36,11 @@
 % shorten typing out parentheses
 \newcommand{\parenths}[1]{\ensuremath{\left(#1\right)}}
 
-% Mastercode
-\newcommand{\Mastercode}{\texttt{Mastercode}\xspace}
+% Programs
+\newcommand{\Program}[1]{\texttt{#1}\xspace}
+\newcommand{\Mastercode}{\Program{Mastercode}}
+\newcommand{\FeynHiggs}{\Program{FeynHiggs}}
+\newcommand{\FeynHiggs}{\Program{SoftSUSY}}
 
 % Physics symbols ...
 \newcommand{\PT}{\ensuremath{p_{\textrm{T}}}\xspace}
@@ -59,6 +66,11 @@
 \newcommand{\mHtanbeta}{\ensuremath{\m{\PHiggsheavy},\tanbeta}}
 \newcommand{\sigmaBR}{\ensuremath{\sigma\times\textrm{BR}}\xspace}
 \newcommand{\mHsigmaBR}{\ensuremath{\m{\PHiggsheavy},\sigmaBR}\xspace}
+
+% sample values
+\newcommand{\nmSUGRA}{\ensuremath{30\times10^{6}}\xspace}
+\newcommand{\ncMSSM}{\ensuremath{95\times10^{6}}\xspace}
+\newcommand{\nNUHM}{\ensuremath{221\times10^{6}}\xspace}
 
 % Stats and equations
 \newcommand{\CL}[1]{
@@ -136,12 +148,6 @@
         \centering
         \begin{subfigure}[]{0.45\textwidth}
             \centering
-            \missingfigure{NUHM2}
-            \caption{\ac{NUHM}2}
-            \label{fig:nuhm2#1}
-        \end{subfigure}
-        \begin{subfigure}[]{0.45\textwidth}
-            \centering
             \missingfigure{NUHM1}
             \caption{\ac{NUHM}1}
             \label{fig:nuhm1#1}
@@ -188,14 +194,16 @@
 \acrodef{DM}[DM]{Dark Matter}
 \acrodef{CMB}[CMB]{Cosmic Microwave Background}
 \acrodef{CDM}[CDM]{Cold \ac{DM}}
-\acrodef{LCDM}[LCDM]{\ensuremath{\Lambda}\ac{CDM}}
+\acrodef{LCDM}[LCDM]{\ensuremath{\Lambda}~\ac{CDM}}
 \acrodef{RGE}[RGE]{Renormalization Group Equation}
 \acrodef{LSP}[LSP]{Lightest Supersymmetric Particle}
 \acrodef{FCNC}[FCNC]{Flavour Changing Neutral Current}
+\acrodef{RGE}[RGE]{Renormalization Group Equation}
 
 % Acronyms - Techniques
 \acrodef{MC}[MC]{Monte Carlo}
 \acrodef{CL}[CL]{Confidence Level}
+\acrodef{MCMC}[MCMC]{Markov Chain Monte Carlo}
 
 % Acronyms - Experimental
 \acrodef{CMS}[CMS]{Compact Muon Solenoid}
