@@ -26,9 +26,11 @@
 \DeclareRobustCommand{\X}{\thesismath{X}\xspace}
 \DeclareRobustCommand{\gjet}{\HepProcess{\Pphoton + jet}\xspace}
 \DeclareRobustCommand{\Bsmumu}{\HepProcess{\PBs\to\Pmu\Pmu}\xspace}
+\DeclareRobustCommand{\Bsmumu}{\HepProcess{\PBd\to\Pmu\Pmu}\xspace}
 \DeclareRobustCommand{\Btaunu}{\HepProcess{\PB\to\Ptau\Pnu}\xspace}
-\DeclareRobustCommand{\BXsll}{\HepProcess{\X_{s}\to\Plepton\Plepton}\xspace}
-\DeclareRobustCommand{\Kmunu}{\HepProcess{\K\to\Pmu\Pnu}\xspace}
+\DeclareRobustCommand{\BXsll}{\HepProcess{\PB\to\X_{s}\Plepton\Plepton}\xspace}
+\DeclareRobustCommand{\Kmunu}{\HepProcess{\PK\to\Pmu\Pnu}\xspace}
+\DeclareRobustCommand{\Kpinunu}{\HepProcess{\PK\to\Ppi\Pnu\APnu}\xspace}
 \DeclareRobustCommand{\bsg}{\HepProcess{\Pbottom\to\Pstrange\Pphoton}\xspace}
 \DeclareRobustCommand{\Htt}{\HepProcess{\PHiggsheavy\to\Ptau\Ptau}\xspace}
 \DeclareRobustCommand{\Htt}{\HepProcess{\PHiggsheavy\to\Ptau\Ptau}\xspace}
@@ -61,10 +63,30 @@
 \newcommand{\R}[1]{\ensuremath{\textrm{R}\parenths{#1}}\xspace}
 \newcommand{\BRexpSM}[1]{\ensuremath{\textrm{BR}^{\textrm{EXP/SM}}_{#1}}\xspace}
 
+\newcommand{\Afb}[1]{\ensuremath{A_{\rm fb}\parenths{#1}}\xspace}
+\newcommand{\AlSLD}{\ensuremath{A_{\ell}({\rm SLD})}\xspace}
+\newcommand{\AlPtau}{\ensuremath{A_{\ell}(P_\Ptau)}\xspace}
+\newcommand{\sinsqtheta}{%
+    \ensuremath{%
+        \sin^{2}\theta_{\rm w}^{\ell}(Q_{\rm fb})
+    }\xspace
+}
+\newcommand{\deltagm}{\ensuremath{a_{\mu}^{\rm EXP} - a_{\mu}^{\rm SM}}\xspace}
+\newcommand{\deltagmvalue}{%
+    \ensuremath{%
+        (30.2\pm8.8\pm2.0_{\rm SUSY})\times10^{-10}
+    }\xspace
+}
+\newcommand{\DMBs}{\ensuremath{\Delta M_{\PBs}}\xspace}
+\newcommand{\DMBd}{\ensuremath{\Delta M_{\PBd}}\xspace}
+\newcommand{\DAhad}{\ensuremath{\Delta\alpha_{\rm had}(\PZ)}\xspace}
+\newcommand{\Dek}{\ensuremath{\Delta \epsilon_{K}}\xspace}
+\newcommand{\sighad}{\ensuremath{\sigma_{\rm had}^{0}}\xspace}
 \newcommand{\Ohsq}{\ensuremath{\Omega_{c}h^{2}}\xspace}
 \newcommand{\spsi}{\ensuremath{\sigma_{p}^{\textrm{SI}}}\xspace}
 \newcommand{\mass}[1]{\ensuremath{m_{#1}}\xspace}
 \newcommand{\m}[1]{\mass{#1}\xspace}
+\newcommand{\mh}{\m{\PHiggslightzero}}
 
 \newcommand{\higgs}{Higgs\xspace}
 
