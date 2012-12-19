@@ -1,6 +1,7 @@
 \ProvidesPackage{mythesis}[2005/07/28]
 \RequirePackage{hepnicenames,hepunits}
 \RequirePackage{acronym,subcaption,caption,todonotes}
+\RequirePackage{footmisc}
 
 % Some shorthand
 % turn off italics
@@ -10,6 +11,11 @@
 \newcommand {\etc}{\mbox{etc.}\xspace}     %etc.
 \newcommand {\vs}{\mbox{\sl vs.}\xspace}      %vs.
 \newcommand {\mdash}{\ensuremath{\mathrm{-}}} % for use within formulas
+% define an inline todo command
+\newcommand{\todoi}[1]{\todo[inline]{#1}}
+% shorten typing out parentheses
+\newcommand{\parenths}[1]{\ensuremath{\left(#1\right)}}
+
 
 %% General utility defns
 \DeclareRobustCommand{\purity}{\thesismath{p}\xspace}
@@ -29,18 +35,19 @@
 \DeclareRobustCommand{\bbHSM}{
     \HepProcess{\Pbottom\APbottom\to\PHiggsheavy_{\textrm{SM}}}\xspace
 }
-
-% define an inline todo command
-\newcommand{\todoi}[1]{\todo[inline]{#1}}
-
-% shorten typing out parentheses
-\newcommand{\parenths}[1]{\ensuremath{\left(#1\right)}}
+\DeclareRobustCommand{\bsg}{\HepProcess{\Pbottom\to\Pstrange\Pphoton}\xspace}
+\DeclareRobustCommand{\gmtwo}{\HepProcess{\parenths{g-2}_{\Pmu}}\xspace}
 
 % Programs
 \newcommand{\Program}[1]{\texttt{#1}\xspace}
 \newcommand{\Mastercode}{\Program{Mastercode}}
 \newcommand{\FeynHiggs}{\Program{FeynHiggs}}
-\newcommand{\FeynHiggs}{\Program{SoftSUSY}}
+\newcommand{\SoftSUSY}{\Program{SoftSUSY}}
+\newcommand{\MicrOMEGAs}{\Program{MicrOMEGAs}}
+\newcommand{\SuperIso}{\Program{SuperIso}}
+\newcommand{\lspscat}{\Program{lspscat}}
+\newcommand{\Bphysics}{\Program{Bphysics}}
+\newcommand{\SUSYPOPE}{\Program{SUSY-POPE}}
 
 % Physics symbols ...
 \newcommand{\PT}{\ensuremath{p_{\textrm{T}}}\xspace}
@@ -54,7 +61,7 @@
 \newcommand{\R}[1]{\ensuremath{\textrm{R}\parenths{#1}}\xspace}
 \newcommand{\BRexpSM}[1]{\ensuremath{\textrm{BR}^{\textrm{EXP/SM}}_{#1}}\xspace}
 
-\newcommand{\OCDM}{\ensuremath{\Omega_{c}h^{2}}\xspace}
+\newcommand{\Ohsq}{\ensuremath{\Omega_{c}h^{2}}\xspace}
 \newcommand{\spsi}{\ensuremath{\sigma_{p}^{\textrm{SI}}}\xspace}
 \newcommand{\mass}[1]{\ensuremath{m_{#1}}\xspace}
 \newcommand{\m}[1]{\mass{#1}\xspace}
