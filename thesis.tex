@@ -45,8 +45,15 @@
 
 %% Start the content body of the thesis
 %\mainmatter
+\setcounter{page}{1}
+\pagenumbering{roman}
   \maketitle
+  \tableofcontents
+  \listoffigures
 
+\newpage
+\pagenumbering{arabic}
+\setcounter{page}{1}
   \include{chapters/introduction}
   \include{chapters/theory}
   \include{chapters/exploring_models}
