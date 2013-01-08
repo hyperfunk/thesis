@@ -16,7 +16,8 @@
 %% ========================================================================
 %% Base class and packages
 %% ========================================================================
-\LoadClass[a4paper,12pt]{book}
+%\LoadClass[a4paper,12pt]{book}
+\LoadClass[a4paper,12pt]{report}
 
 \RequirePackage{graphicx}
 \RequirePackage{mythesis} %% my custom .sty packages
@@ -34,36 +35,36 @@
 %% ========================================================================
 % use \layout to print example layout page
 
-% from hepthesis
-\setlength{\parindent}{17pt}          % tweak the initial indent in paras
-\setlength{\parskip}{8.5pt}            % tweak the intra-para gap size
-\setlength{\topmargin}{0pt}
-\setlength{\textheight}{648pt}
-\setlength{\footskip}{36pt}
-\setlength{\textwidth}{446pt}
+%% from hepthesis
+%\setlength{\parindent}{17pt}          % tweak the initial indent in paras
+%\setlength{\parskip}{8.5pt}            % tweak the intra-para gap size
+%\setlength{\topmargin}{0pt}
+%\setlength{\textheight}{648pt}
+%\setlength{\footskip}{36pt}
+%\setlength{\textwidth}{446pt}
 
-% equal margins
-\setlength{\oddsidemargin}{2pt}
-\setlength{\evensidemargin}{\oddsidemargin}
+%% equal margins
+%\setlength{\oddsidemargin}{2pt}
+%\setlength{\evensidemargin}{\oddsidemargin}
 
-%% Increase inner margins for binding
-\newlength{\@bindextramargin}
-\setlength{\@bindextramargin}{0pt}% change this for binding offset
-\addtolength{\oddsidemargin}{\@bindextramargin}
-\addtolength{\evensidemargin}{-\@bindextramargin}
+%%% Increase inner margins for binding
+%\newlength{\@bindextramargin}
+%\setlength{\@bindextramargin}{0pt}% change this for binding offset
+%\addtolength{\oddsidemargin}{\@bindextramargin}
+%\addtolength{\evensidemargin}{-\@bindextramargin}
 
-% not sure what to set for these
-\setlength{\headheight}{15pt}
-\setlength{\headsep}{25pt}
+%% not sure what to set for these
+\setlength{\headheight}{29pt}
+%\setlength{\headsep}{25pt}
 
-% not sure what to set for these
-\setlength{\marginparsep}{0pt}
-\setlength{\marginparwidth}{0pt}
-\setlength{\marginparpush}{0pt}
+%% not sure what to set for these
+%\setlength{\marginparsep}{0pt}
+%\setlength{\marginparwidth}{0pt}
+%\setlength{\marginparpush}{0pt}
 
-% for the front matter pages
-\newlength{\@frontmattertopskip}
-\setlength{\@frontmattertopskip}{55pt}  % Add a little extra space at top of front matter pages
+%% for the front matter pages
+%\newlength{\@frontmattertopskip}
+%\setlength{\@frontmattertopskip}{55pt}  % Add a little extra space at top of front matter pages
 
 %% ========================================================================
 %% Headers and footers
@@ -97,15 +98,15 @@
 %% ========================================================================
 
 % frontmatter environments
-\newenvironment{abstract}[1][Abstract]{%defaults to title Abstract
-  \cleardoublepage%
-  \vspace*{\@frontmattertopskip}%
-  \thispagestyle{plain}%
-  \begin{center}%
-    {\LARGE\textbf{#1}}%
-  \end{center}%
-  \vspace*{1cm}%
-}{ }
+%\newenvironment{abstract}[1][Abstract]{%defaults to title Abstract
+  %\cleardoublepage%
+  %\vspace*{\@frontmattertopskip}%
+  %\thispagestyle{plain}%
+  %\begin{center}%
+    %{\LARGE\textbf{#1}}%
+  %\end{center}%
+  %\vspace*{1cm}%
+%}{ }
 
 \newenvironment{declaration}{%
   \cleardoublepage%
