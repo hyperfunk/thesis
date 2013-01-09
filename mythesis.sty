@@ -61,7 +61,7 @@
 \newcommand{\SUtwo}{\ensuremath{SU\parenths{2}}\xspace}
 \newcommand{\SUthree}{\ensuremath{SU\parenths{3}}\xspace}
 
-\newcommand{\sgnMu}{\ensuremath{\textmf{sign}\parenths{\mu}}}\xspace}
+\newcommand{\sgnMu}{\ensuremath{\textrm{sign}\parenths{\mu}}\xspace}
 
 % Physics symbols ...
 \newcommand{\PT}{\ensuremath{p_{\textrm{T}}}\xspace}
@@ -118,6 +118,12 @@
 
 \newcommand{\CDF}{CDF\xspace}
 \newcommand{\DZero}{D\O\xspace}
+
+\newcommand{\blnkbinom}[2]{\ensuremath{\genfrac{}{}{0pt}{}{#1}{#2}}\xspace}
+
+\newcommand{\leptondoublet}[1]{
+    \ensuremath{\binom{\nu_{#1}}{#1}_{L}}\xspace
+}
 
 % Stats and equations
 \newcommand{\CL}[1]{
@@ -228,6 +234,10 @@
 % \acrodef{etacar}[$\eta$ Car]{Eta Carinae}
 
 % Acronyms - Physics
+\acrodef{LH}[LH]{Left Handed}
+\acrodef{RH}[RH]{Right Handed}
+\acrodef{QM}[QM]{Quantum Mechanics}
+\acrodef{QED}[QED]{Quantum Electrodynamics}
 \acrodef{QCD}[QCD]{Quantum Chromodynamics}
 \acrodef{EWK}[EWK]{Electroweak}
 \acrodef{SUSY}[SUSY]{Supersymmetry}
