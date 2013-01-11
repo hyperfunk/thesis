@@ -1,6 +1,6 @@
 \ProvidesPackage{mythesis}[2005/07/28]
 \RequirePackage{hepnicenames,hepunits}
-\RequirePackage{acronym,subcaption,caption,todonotes,cleveref}
+\RequirePackage{acronym,subcaption,caption,todonotes,cleveref,cancel}
 \RequirePackage{footmisc}
 
 % Some shorthand
@@ -56,6 +56,7 @@
 
 %math
 \newcommand{\chisq}{\ensuremath{\chi^{2}}\xspace}
+\newcommand{\Lag}[1]{\ensuremath{\mathcal{L}_{\textrm{#1}}}\xspace}
 
 \newcommand{\Uone}{\ensuremath{U\parenths{1}}\xspace}
 \newcommand{\SUtwo}{\ensuremath{SU\parenths{2}}\xspace}
@@ -240,11 +241,13 @@
 \acrodef{RH}[RH]{Right Handed}
 \acrodef{QM}[QM]{Quantum Mechanics}
 \acrodef{RQM}[RQM]{Relativistic Quantum Mechanics}
+\acrodef{QFT}[QFT]{Quantum Field Theory}
 \acrodef{QED}[QED]{Quantum Electrodynamics}
 \acrodef{QCD}[QCD]{Quantum Chromodynamics}
 \acrodef{EWK}[EWK]{Electroweak}
 \acrodef{SUSY}[SUSY]{Supersymmetry}
 \acrodef{GUT}[GUT]{Grand Unified Theory}
+\acrodef{VEV}[VEV]{Vacuum Expectation Value}
 \acrodef{PDF}[PDF]{Parton Density Function}
 \acrodef{DY}[DY]{Drell-Yan}
 \acrodef{LO}[LO]{Leading Order}
