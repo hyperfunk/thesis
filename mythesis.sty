@@ -1,6 +1,6 @@
 \ProvidesPackage{mythesis}[2005/07/28]
 \RequirePackage{hepnicenames,hepunits}
-\RequirePackage{acronym,subcaption,caption,todonotes,cleveref,cancel}
+\RequirePackage{acronym,subcaption,caption,todonotes,cleveref,cancel,amssymb,amsmath}
 \RequirePackage{footmisc}
 
 % Some shorthand
@@ -57,6 +57,7 @@
 %math
 \newcommand{\chisq}{\ensuremath{\chi^{2}}\xspace}
 \newcommand{\Lag}[1]{\ensuremath{\mathcal{L}_{\textrm{#1}}}\xspace}
+\newcommand{\LambdaUV}{\ensuremath{\Lambda_{\textrm{UV}}}\xspace}
 
 \newcommand{\Uone}{\ensuremath{U\parenths{1}}\xspace}
 \newcommand{\SUtwo}{\ensuremath{SU\parenths{2}}\xspace}
@@ -113,6 +114,9 @@
 \newcommand{\mHtanbeta}{\ensuremath{\m{\PHiggsheavy},\tanbeta}}
 \newcommand{\sigmaBR}{\ensuremath{\sigma\times\textrm{BR}}\xspace}
 \newcommand{\mHsigmaBR}{\ensuremath{\m{\PHiggsheavy},\sigmaBR}\xspace}
+\newcommand{\sigmaWW}{\ensuremath{
+    \sigma\parenths{\PW\PW\rightarrow\PW\PW}
+    }\xspace}
 
 % sample values
 \newcommand{\nmSUGRA}{\ensuremath{30\times10^{6}}\xspace}
