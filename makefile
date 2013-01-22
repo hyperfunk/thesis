@@ -37,7 +37,7 @@ spell:
 	aspell -t check ${INPUT}.tex
 
 summary:
-	texcount.pl -inc -html -v -sum $(INPUT).tex > \
+	./texcount.pl -inc -html -v -sum $(INPUT).tex > \
 		$(OUTPUT).html
 	chromium --app=file://$(CURDIR)/$(OUTPUT).html
 
