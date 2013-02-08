@@ -1,5 +1,7 @@
 #! /bin/bash
 
+DATE=`date "+%d%b"`
+
 gs -sDEVICE=pdfwrite -dNOPAUSE -dBATCH -dSAFER \
-       -dFirstPage=7 -dLastPage=30 \
-       -sOutputFile=chpt4.pdf drafts/thesis_draft_19Dec.pdf
+       -dFirstPage=$1 -dLastPage=$2 \
+       -sOutputFile=$3.pdf drafts/thesis_draft_$DATE.pdf
