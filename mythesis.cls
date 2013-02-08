@@ -18,6 +18,7 @@
 %% ========================================================================
 %\LoadClass[a4paper,12pt]{book}
 \LoadClass[a4paper,12pt]{report}
+%\LoadClass[a4paper,12pt]{report}
 
 \RequirePackage{graphicx}
 \RequirePackage{mythesis} %% my custom .sty packages
@@ -37,7 +38,7 @@
 
 %% from hepthesis
 %\setlength{\parindent}{17pt}          % tweak the initial indent in paras
-%\setlength{\parskip}{8.5pt}            % tweak the intra-para gap size
+\setlength{\parskip}{8.5pt}            % tweak the intra-para gap size
 %\setlength{\topmargin}{0pt}
 %\setlength{\textheight}{648pt}
 %\setlength{\footskip}{36pt}
