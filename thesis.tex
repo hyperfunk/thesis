@@ -15,9 +15,9 @@
 \makeatletter
 \@ifpackageloaded{hyperref}{%
   \hypersetup{%
-    pdftitle = {A search for supersymmetry using the \aT variable with the CMS detector
-    and the impact of experimental searches for supersymmetry on supersymmetric
-parameter space},
+    pdftitle = {A search for supersymmetry using the \aT variable with the CMS
+        detector and the impact of experimental searches for supersymmetry on
+    supersymmetric parameter space},
     pdfsubject = {Particle physics},
     pdfkeywords = {physics, LHC, CMS, SUSY, supersymmetry},
     pdfauthor = {Samuel Rogerson}
@@ -34,7 +34,6 @@ parameter space},
 parameter space}
 %%\title{t}
 \author{Samuel Rogerson}
-
 %% -------------------------------------
 %% Content
 %% -------------------------------------
@@ -43,7 +42,7 @@ parameter space}
 \begin{document}
 %\layout
 
-%% Define the un-numbered front matter (cover pages, rubrik and table of contents)
+%% Define the un-numbered front matter (cover pages, rubrik and TOC)
 %\frontmatter
   %\input{chapters/front.tex}
 
@@ -52,8 +51,18 @@ parameter space}
 \setcounter{page}{1}
 \pagenumbering{roman}
   \maketitle
-  \tableofcontents
-  \listoffigures
+  \begin{abstract}
+
+      A search for supersymmetry in final states with jets and missing
+      transverse energy is performed in pp collisions at a centre-of-mass energy
+      of $s=\sqrt{7}\TeV$. The data sample corresponds to $4.98fb^{-1}$
+      collected by the CMS experiment at the LHC.  A dimensionless kinematic
+      variable is used as the main discriminant between genuine and
+      misreconstructed signal events.  
+  
+  \end{abstract}
+  
+  \tableofcontents \listoffigures
 
 \newpage
 \pagenumbering{arabic}
