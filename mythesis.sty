@@ -38,9 +38,11 @@
 }
 \DeclareRobustCommand{\bsg}{\HepProcess{\Pbottom\to\Pstrange\Pphoton}\xspace}
 \DeclareRobustCommand{\gmtwo}{\HepProcess{\parenths{g-2}_{\Pmu}}\xspace}
-\DeclareRobustCommand{\Znunu}{\HepProcess{\PZ\to\Pnu\APnu}\xspace}
+\DeclareRobustCommand{\Znunu}{\HepProcess{\PZ\to\Pnu\APn/}\xspace}
 \DeclareRobustCommand{\ttbar}{\HepProcess{\Ptop\APtop}\xspace}
 \DeclareRobustCommand{\Wlnu}{\HepProcess{\PW\to\Plepton\Pnu}\xspace}
+\DeclareRobustCommand{\gjets}{\HepProcess{\Pphoton+\textrm{jets}}\xspace}
+
 
 % Programs
 \newcommand{\Program}[1]{\texttt{#1}\xspace}
@@ -72,7 +74,9 @@
 \newcommand{\HT}{\ensuremath{H_{\textrm{T}}}\xspace}
 \newcommand{\MHT}{\ensuremath{H_{\textrm{T}}^{\text{miss}}}\xspace}
 \newcommand{\ET}{\ensuremath{E_{\textrm{T}}}\xspace}
-\newcommand{\MET}{\ensuremath{\ET^{\text{miss}}}\xspace}
+\newcommand{\ETj}{\ensuremath{E_{\textrm{T}}^{\textrm{jet}}}\xspace}
+\newcommand{\MET}{\ensuremath{\ET^{\textrm{miss}}}\xspace}
+\newcommand{\Njet}{\ensuremath{N_{\textrm{jet}}}\xspace}
 \newcommand{\aT}{\ensuremath{\alpha_{T}}\xspace}
 
 \newcommand{\BR}[1]{\ensuremath{\textrm{BR}\parenths{#1}}\xspace}
