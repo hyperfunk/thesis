@@ -38,11 +38,20 @@
 }
 \DeclareRobustCommand{\bsg}{\HepProcess{\Pbottom\to\Pstrange\Pphoton}\xspace}
 \DeclareRobustCommand{\gmtwo}{\HepProcess{\parenths{g-2}_{\Pmu}}\xspace}
-\DeclareRobustCommand{\Znunu}{\HepProcess{\PZ\to\Pnu\APnu/}\xspace}
+\DeclareRobustCommand{\Znunu}{\HepProcess{\PZ\to\Pnu\APnu}\xspace}
 \DeclareRobustCommand{\ttbar}{\HepProcess{\Ptop\APtop}\xspace}
 \DeclareRobustCommand{\Wlnu}{\HepProcess{\PW\to\Plepton\Pnu}\xspace}
+\DeclareRobustCommand{\Wmunu}{\HepProcess{\PW\to\Pmu\Pnu}\xspace}
+\DeclareRobustCommand{\Wjets}{\HepProcess{\PW+\textrm{jets}}\xspace}
 \DeclareRobustCommand{\gjets}{\HepProcess{\Pphoton+\textrm{jets}}\xspace}
-
+\DeclareRobustCommand{\mujets}{\HepProcess{\Pmu+\textrm{jets}}\xspace}
+\DeclareRobustCommand{\mumujets}{\HepProcess{\Pmu\Pmu+\textrm{jets}}\xspace}
+\DeclareRobustCommand{\Znunujets}{\HepProcess{
+    \PZ\to\Pnu\APnu+\textrm{jets}}
+\xspace} 
+\DeclareRobustCommand{\Znunujets}{\HepProcess{
+    \PZ\to\Pmu\APmu+\textrm{jets}}
+\xspace} 
 
 % Programs
 \newcommand{\Program}[1]{\texttt{#1}\xspace}
