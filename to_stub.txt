@@ -1,0 +1,6 @@
+! LaTeX Error: File `mc/nuhm1_m0_tanb_overlay' not found.
+! LaTeX Error: File `mc/cmssm_m0_tanb_overlay' not found.
+! LaTeX Error: File `mc/nuhm1_tanb_m12_overlay' not found.
+! LaTeX Error: File `mc/cmssm_MA_tanb_overlay' not found.
+! LaTeX Error: File `mc/nuhm1_mneu1_ssicm_overlay' not found.
+! LaTeX Error: File `mc/cmssm_mneu1_ssicm_overlay' not found.
