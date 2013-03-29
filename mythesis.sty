@@ -15,6 +15,8 @@
 \newcommand{\todoi}[1]{\todo[inline]{#1}}
 % shorten typing out parentheses
 \newcommand{\parenths}[1]{\ensuremath{\left(#1\right)}}
+\newcommand{\specialcell}[2][c]{%
+  \begin{tabular}[#1]{@{}c@{}}#2\end{tabular}}
 
 
 %% General utility defns
@@ -57,6 +59,7 @@
 \DeclareRobustCommand{\ttW}{\ensuremath{\Ptop\Ptop\PW}\xspace}
 \DeclareRobustCommand{\Zinv}{\ensuremath{\PZ\textrm{inv}}\xspace}
 \DeclareRobustCommand{\fZinv}{\ensuremath{f_{\Zinv}\xspace}}
+\DeclareRobustCommand{\stauneu}{\PStau-\PSneutralino}
 
 % Programs
 \newcommand{\Program}[1]{\texttt{#1}\xspace}
@@ -135,6 +138,7 @@
 
 \newcommand{\mZero}{\m{0}\xspace}
 \newcommand{\mHalf}{\m{1/2}\xspace}
+\newcommand{\mHud}{\m{{H_{\textrm{u,d}}}}\xspace}
 \newcommand{\mZeromHalf}{\m{0},\m{1/2}\xspace}
 \newcommand{\mZerotanbeta}{\m{0},\tanbeta\xspace}
 \newcommand{\tanbetamHalf}{\tanbeta,\m{1/2}\xspace}
