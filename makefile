@@ -40,6 +40,10 @@ summary:
 		$(OUTPUT).html
 	chromium --app=file://$(CURDIR)/$(OUTPUT).html
 
+shortsum:
+	@./texcount.pl -inc -brief $(INPUT).tex 2>&1 | \
+		awk '/total/{print $1}'
+
 push:
 	cd chapters; git push origin master
 	git push origin master
