@@ -1,0 +1,209 @@
+analysis.tex-62-detail in \SectionRef{sec:controlsamples}.  The rate of this process falls with
+analysis.tex:63:rising \ET\cite{null}.
+analysis.tex-64-
+--
+analysis.tex-114-displaced with respect to the primary interaction vertex.  The combined
+analysis.tex:115:secondary vertex algorithm\cite{null} attempts to distinguish between jets
+analysis.tex-116-originating from bottom quarks and jets originating from other sources (e.g.
+--
+analysis.tex-118-this analysis selects values $>0.679$ leading to a quark miss-tag rate of 1\% and
+analysis.tex:119:an efficiency between 60 and 70\% that is \PTj\cite{null}.
+analysis.tex-120-
+--
+analysis.tex-258-
+analysis.tex:259:This analysis uses a specialised joint \aT-\HT trigger\cite{null} which is
+analysis.tex-260-designed to have high analysis efficiency and low rate.
+--
+analysis.tex-484-\SectionRef{sec:formulamethod}, can also be applied to all b-tag multiplicity
+analysis.tex:485:bins resulting in improved translation factor estimation\cite{null}.
+analysis.tex-486-
+--
+analysis.tex-535-match the measurements with data according to the algorithm outline in
+analysis.tex:536:\cite{null}.
+analysis.tex-537-
+--
+analysis.tex-589-other light flavors where the values of these are specific to the b-tagger used
+analysis.tex:590:in the analysis (CSVM)\cite{null} and are multiplicatively made from the
+analysis.tex-591-fast-simulation to full-simulation and the full-simulation to data
+--
+constraining_models.tex-174-
+constraining_models.tex:175:where $\gamma\parenths{a,x}$ is the incomplete gamma function\cite{null} and
+constraining_models.tex:176:$\Gamma\parenths{x}$ is the gamma function\cite{null}.
+constraining_models.tex-177-
+--
+constraining_models.tex-231-    \hline \hline
+constraining_models.tex:232:    \m{\Ptop}[\GeV]    & \cite{null} & $173.2 \pm 0.90$                       \\
+constraining_models.tex-233-    \hline
+constraining_models.tex:234:    \DAhad             & \cite{null} & $0.02749 \pm 0.00010$                  \\
+constraining_models.tex-235-    \hline
+constraining_models.tex:236:    \m{\PZ}[\GeV]      & \cite{null} & $91.1875\pm0.0021$                     \\ 
+constraining_models.tex-237-    \hline\hline
+constraining_models.tex:238:    $\Gamma_{Z}$[\GeV] & \cite{null} & $2.4952\pm0.0023\pm0.001_{\rm SUSY}$   \\ 
+constraining_models.tex-239-    \hline
+constraining_models.tex:240:    \sighad[\nanobarn] & \cite{null} & $41.540\pm0.037$                       \\
+constraining_models.tex-241-    \hline
+constraining_models.tex:242:    $R_l$              & \cite{null} & $20.767\pm0.025$                       \\ 
+constraining_models.tex-243-    \hline
+constraining_models.tex:244:    \Afb{\ell}         & \cite{null} & $0.01714\pm0.00095$                    \\ 
+constraining_models.tex-245-    \hline
+constraining_models.tex:246:    \AlPtau            & \cite{null} & $0.1465 \pm 0.0032$                    \\ 
+constraining_models.tex-247-    \hline
+constraining_models.tex:248:    $R_{\rm b}$        & \cite{null} & $0.21629\pm0.00066$                    \\ 
+constraining_models.tex-249-    \hline
+constraining_models.tex:250:    $R_{\rm c}$        & \cite{null} & $0.1721\pm0.0030$                      \\ 
+constraining_models.tex-251-    \hline
+constraining_models.tex:252:    \Afb{b}            & \cite{null} & $0.0992\pm0.0016$                      \\ 
+constraining_models.tex-253-    \hline
+constraining_models.tex:254:    \Afb{c}            & \cite{null} & $0.0707\pm0.0035$                      \\ 
+constraining_models.tex-255-    \hline
+constraining_models.tex:256:    $A_{b}$            & \cite{null} & $0.923\pm0.020$                        \\ 
+constraining_models.tex-257-    \hline
+constraining_models.tex:258:    $A_{c}$            & \cite{null} & $0.670\pm0.027$                        \\ 
+constraining_models.tex-259-    \hline
+constraining_models.tex:260:    \AlSLD             & \cite{null} & $0.1513\pm0.0021$                      \\ 
+constraining_models.tex-261-    \hline
+constraining_models.tex:262:    \sinsqtheta        & \cite{null} & $0.2324\pm0.0012$                      \\ 
+constraining_models.tex-263-    \hline
+constraining_models.tex:264:    \m{\PW}[\GeV]      & \cite{null} & $80.399\pm0.023\pm0.010_{\rm SUSY}$    \\
+constraining_models.tex-265-    \hline\hline
+constraining_models.tex:266:    \deltagm           & \cite{null} & \deltagmvalue                          \\
+constraining_models.tex-267-    \hline
+constraining_models.tex:268:    \mh[\GeV]          & \cite{null} & $> 114.4 [\pm 1.5_{\rm SUSY}]$         \\
+constraining_models.tex-269-    \hline\hline
+constraining_models.tex:270:    \R{\BR{\bsg}}      & \cite{null} & $1.117\pm0.076_{\rm EXP}$              \\
+constraining_models.tex-271-                       &             & $\pm0.082_{\rm SM}\pm0.050_{\rm SUSY}$ \\
+constraining_models.tex-272-    \hline
+constraining_models.tex:273:    \BR{\Bsmumu}       & \cite{null} & LHCb, CMS, ATLAS, CDF                  \\
+constraining_models.tex-274-    \hline
+constraining_models.tex:275:    \R{\BR{\Btaunu}}   & \cite{null} & $1.43 \pm 0.43_{\rm EXP+TH}$           \\
+constraining_models.tex-276-    \hline
+constraining_models.tex:277:    \BR{\Bdmumu}       & \cite{null} & $<4.6[\pm0.01_{\rm SUSY}]\times10^{-9}$\\
+constraining_models.tex-278-    \hline
+constraining_models.tex:279:    \R{\BR{\BXsll}}    & \cite{null} & $0.99\pm0.32$                          \\
+constraining_models.tex-280-    \hline
+constraining_models.tex:281:    \R{\BR{\Kmunu}}    & \cite{null} & $1.008\pm0.014_{\rm EXP+TH}$           \\
+constraining_models.tex-282-    \hline
+constraining_models.tex:283:    \R{\BR{\Kpinunu}}  & \cite{null} & $ < 4.5 $                              \\
+constraining_models.tex-284-    \hline
+constraining_models.tex:285:    \R{\DMBs}          & \cite{null} & $0.97\pm0.01_{\rm EXP}\pm0.27_{\rm SM}$\\
+constraining_models.tex-286-    \hline
+constraining_models.tex:287:    \R{\DMBs}/\R{\DMBd}& \cite{null} & $1.00\pm0.01_{\rm EXP}\pm0.13_{\rm SM}$\\
+constraining_models.tex-288-    \hline
+constraining_models.tex:289:    \R{\Dek}           & \cite{null} & $1.08\pm0.14_{\rm EXP+TH}$             \\
+constraining_models.tex-290-    \hline \hline
+constraining_models.tex:291:    \Ohsq              & \cite{null} & $0.1120\pm0.0056\pm0.012_{\rm SUSY}$   \\
+constraining_models.tex-292-    \hline
+constraining_models.tex:293:    \spsi              & \cite{null} & $(\m{\PSneutralinoOne}, \spsi)$ plane  \\
+constraining_models.tex-294-    \hline\hline
+constraining_models.tex:295:    jets + \MET        & \cite{null} & $(m_0, m_{1/2})$ plane                 \\
+constraining_models.tex-296-    \hline
+constraining_models.tex:297:    $H/A, H^\pm$       & \cite{null} & $(\m{A}, \tanbeta) plane$              \\
+constraining_models.tex-298-    \hline \hline
+--
+constraining_models.tex-309-\subsection{Tevatron direct \acl{SUSY} searches}
+constraining_models.tex:310:The direct searches for \ac{SUSY} carried out at the Tevatron \cite{null}
+constraining_models.tex-311-provided early lower bounds on the lightest of the sparticle masses, 
+--
+constraining_models.tex-377-preference for low masses is mostly driven by the \muonam constraint which has a
+constraining_models.tex:378:functional form\cite{null},
+constraining_models.tex-379-
+--
+constraining_models.tex-400-constraint on the relic abundance of dark matter,
+constraining_models.tex:401:$\Ohsq_{\textrm{c}}$\cite{null}. In the \ac{NUHM}1 a small region of this enters
+constraining_models.tex-402-into the \CL{95} region between $300\lesssim\mZero400$.
+--
+constraining_models.tex-474-previously possible, the constraints from which impact the other parameters of
+constraining_models.tex:475:the models.  \cite{null}.
+constraining_models.tex-476-
+--
+constraining_models.tex-481-to the value of \tanbeta is introduced to the limit.  However, for \MET only
+constraining_models.tex:482:searches the dependence on \tanbeta is negligible \cite{null}.
+constraining_models.tex-483-
+--
+constraining_models.tex-527-
+constraining_models.tex:528:Other results \cite{null} have provided a grid of effective event numbers for
+constraining_models.tex-529-the sensitive regions in the \parenths{\mZeromHalf} plane.  In this case a
+--
+constraining_models.tex-563-Here the \ac{ATLAS} jets + \MET search using $5\invfemtobarn$ of data at $7\TeV$
+constraining_models.tex:564:is implemented \cite{null}.
+constraining_models.tex-565-
+--
+constraining_models.tex-567-Other searches for \ac{BSM} physics have been performed at the \ac{LHC}.  These
+constraining_models.tex:568:include searches from the dedicated B-physics experiment LHCb \cite{null},
+constraining_models.tex-569-constraints on \Bsmumu from multiple experiments and searches for heavy \higgs
+--
+constraining_models.tex-617-Making use of the signal and background expectations provided in
+constraining_models.tex:618:\cite{bsmumulhcb}, \cite{bsmumucms}, \cite{bsmumuatlas}, and \cite{null} toy
+constraining_models.tex-619-experiments were generated to recreate the quoted measurement and constraints
+--
+constraining_models.tex-682-\subsubsection{\ac{CMS}: \Htt }\label{sec:lhoodheavyhiggs}
+constraining_models.tex:683:Searches for a heavy \higgs boson have been carried out at \ac{CMS}\cite{null}
+constraining_models.tex:684:and \ac{ATLAS}\cite{null}.  For the most recent results the search from
+constraining_models.tex:685:\ac{CMS} appears to have the higher degree of  sensitivity (see \cite{null}
+constraining_models.tex:686:Figure \textbf{null} and \cite{null} Figure \textbf{null}), and so is selected
+constraining_models.tex-687-to be the representative constraint applied to the parameter spaces. 
+--
+constraining_models.tex-702-\sigmaBR for a representative grid of points\footnote{Comparing Figure
+constraining_models.tex:703:    \textbf{null} in \cite{null} with the pre-LHC \parenths{\mHtanbeta} plane,
+constraining_models.tex-704-    \FigureRef{fig:prelhc_MA_tanb}, it is apparent that the region of highest
+--
+constraining_models.tex-961-through the combined effect of multiple neutralino and chargino co-annihilation
+constraining_models.tex:962:processes\cite{null}.  The existence of this region as being both valid by
+constraining_models.tex-963-the presence of a neutralino \ac{LSP} as well as satisfying the relic density
+--
+theory.tex-84-flavour changing interactions called \acp{FCNC}, though experimental
+theory.tex:85:evidence\cite{null} tells us that these processes must be rare. This lead
+theory.tex-86-to the development of the \ac{GIM} mechanism which suppresses the \acp{FCNC} in
+theory.tex-87-the \ac{SM}.  The introduction of the \ac{GIM} mechanism also lead to the
+theory.tex:88:prediction of the charm quark $c$\cite{null}.
+theory.tex-89-
+--
+theory.tex-117-asymptotically via colour fields of reduced strength resulting in a state where
+theory.tex:118:they behave essentially free, non-interacting particles\cite{null}.
+theory.tex-119-
+--
+theory.tex-122-equation yielded accurate results, but failed to described fine and hyperfine
+theory.tex:123:structures\cite{null}.  This lead to attempts to combine \ac{QM} and
+theory.tex-124-(relativistic) classical electromagnetism, resulting in Dirac formalizing
+theory.tex:125:\ac{RQM}\cite{null}.  One test of this was a prediction of the electron's
+theory.tex-126-magnetic moment \emm,
+--
+theory.tex-137-solved the \amm problem for electrons, giving one of the most accurately
+theory.tex:138:verified predictions in history\cite{null}.
+theory.tex-139-
+--
+theory.tex-461-In a similar way mass is given to the leptons and gauge invariance is maintained
+theory.tex:462:by using Yukawa couplings\cite{null} between the leptons and the higgs field,
+theory.tex-463-
+--
+theory.tex-723-If \ac{SUSY} were unbroken then sparticles would have been detected in many
+theory.tex:724:previous searches\cite{null} due to their low masses.  This requires that if
+theory.tex-725-sparticles do exist, they must arise from a model of \emph{broken} \ac{SUSY},
+--
+theory.tex-746-correction to the \higgs mass if the symmetry is exact.  The hierarchy problem,
+theory.tex:747:though not solved, is reduced to the little hierarchy problem\cite{null}.  What
+theory.tex-748-remains is a for a mechanism for \ac{SUSY} to produce \acl{DM} and resolve the
+--
+theory.tex-781-That is, the process of breaking the symmetry must not lead to a reappearance of
+theory.tex:782:ultraviolet divergences in the theory\cite{null}, e.g. similar to the issues
+theory.tex-783-described in \SectionRef{sec:divhiggs}.  
+--
+theory.tex-787-Lagrangian that break the symmetry, where it is assumed these terms originate in
+theory.tex:788:some unknown sector where \ac{SUSY} is broken spontaneously\cite{null} (i.e. all
+theory.tex-789-the terms in the Lagrangian respect the symmetry).
+--
+theory.tex-820-conservation\footnote{The \ac{MSSM} can allow for a small degree of
+theory.tex:821:R-Parity violation\cite{null}}.
+theory.tex-822-
+--
+theory.tex-828-of the three gauge groups occurs naturally at a scale $\mu\sim
+theory.tex:829:10^{16}\GeV$\cite{null}. See \FigureRef{fig:gaugeunification} for a comparison
+theory.tex-830-of the values of the gauge couplings as a function of energy.
+--
+theory.tex-849-parameters needed to define a point in the parameter space of the \ac{MSSM} is
+theory.tex:850:108\cite{null}.  Hence it is necessary to apply constraints to the \ac{MSSM} in
+theory.tex-851-order to reduce the parameter space and make specific predictions of the
+--
+theory.tex-896-\tanbeta is now fixed by the radiative electroweak symmetry breaking
+theory.tex:897:conditions\cite{null}.  This model is known as the \ac{vcMSSM}.
+theory.tex-898-

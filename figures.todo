@@ -1,0 +1,35 @@
+analysis.tex-20-\begin{figure}[ht]
+analysis.tex:21:    \missingfigure{HT dist}
+analysis.tex-22-    \caption{Distribution of events with \HT}
+--
+constraining_models.tex-582-\begin{figure}[ht]
+constraining_models.tex:583:    \missingfigure{process contributing to bsmumu}
+constraining_models.tex-584-    \caption{Diagrams of process contributing to \BR{\Bsmumu}}
+--
+theory.tex-504-    \centering
+theory.tex:505:    \missingfigure{WW scattering processes}
+theory.tex-506-    \todoi{s,t, direct quartic, gamma and z mediated}
+--
+theory.tex-524-    \centering
+theory.tex:525:    \missingfigure{WW scattering processes for scalar}
+theory.tex-526-    \todoi{2s,2t}
+--
+theory.tex-566-        \centering
+theory.tex:567:        \missingfigure{fermion loop for higgs}
+theory.tex-568-        \caption{Fermion}
+--
+theory.tex-572-        \centering
+theory.tex:573:        \missingfigure{scalar loop for higgs}
+theory.tex-574-        \caption{Scalar}
+--
+theory.tex-663-    \centering
+theory.tex:664:    \missingfigure{g-2 contributions in the SM}
+theory.tex-665-    \caption{\ac{SM} Diagrams contributing to the anomalous magnetic moment of
+--
+theory.tex-762-    \centering
+theory.tex:763:    \missingfigure{g-2 contributions from \acl{SUSY}}
+theory.tex-764-    \caption{\acl{SUSY} diagrams contributing to the anomalous magnetic moment
+--
+theory.tex-833-    \centering
+theory.tex:834:    \missingfigure{Gauge unification: SM vs MSSM}
+theory.tex-835-    \caption{Gauge couplings as a function of energy scale in the \ac{SM} and

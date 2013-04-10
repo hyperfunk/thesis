@@ -47,3 +47,8 @@ shortsum:
 push:
 	cd chapters; git push origin master
 	git push origin master
+
+todo:
+	cd chapters; git grep --color=never -n1 todoi > ../todos.todo
+	cd chapters; git grep --color=never -n1 missingfigure > ../figures.todo
+	cd chapters; git grep --color=never -n1 cite{null} > ../citations.todo

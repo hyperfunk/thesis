@@ -1,0 +1,48 @@
+analysis.tex-335-
+analysis.tex:336:\todoi{Define MC\ttW and MC \Zinv}
+analysis.tex-337-
+--
+constraining_models.tex-75-\subsection{Model scanning}
+constraining_models.tex:76:\todoi{update \TableRef{tab:predictors} what does \SuperIso do, etc.}
+constraining_models.tex:77:\todoi{fix spacing of \TableRef{tab:observables}}
+constraining_models.tex-78-
+--
+constraining_models.tex-326-\end{equation}
+constraining_models.tex:327:%\todoi{explain specifics of this \chisq term}
+constraining_models.tex-328-
+--
+constraining_models.tex-605-Finally, the \CDF experiment also publish searches for \Bsmumu, citing a
+constraining_models.tex:606:value of \todoi{find value of bsmumu from CDF/d0}
+constraining_models.tex-607-
+--
+constraining_models.tex-687-to be the representative constraint applied to the parameter spaces. 
+constraining_models.tex:688:\todoi{check figure number from CMS heavy higgs search paper}
+constraining_models.tex-689-
+--
+constraining_models.tex-882-    \label{tab:minima}
+constraining_models.tex:883:    \todoi{add in 68 range $\pm$ on bf points}
+constraining_models.tex-884-\end{table}
+--
+theory.tex-2-
+theory.tex:3:\todoi{include spectrum / particle listing for sm and susy}
+theory.tex-4-
+--
+theory.tex-201-
+theory.tex:202:\todoi{need to neaten up the introduction of Fmunua as kinetics of free field,  and gauge invar in general}
+theory.tex-203-
+--
+theory.tex-505-    \missingfigure{WW scattering processes}
+theory.tex:506:    \todoi{s,t, direct quartic, gamma and z mediated}
+theory.tex-507-    \caption{\ac{SM} WW scattering processes}{The tree-level \PW scattering
+--
+theory.tex-525-    \missingfigure{WW scattering processes for scalar}
+theory.tex:526:    \todoi{2s,2t}
+theory.tex-527-    \caption{Scalar propagator WW scattering processes}{The tree-level \PW
+--
+theory.tex-842-\ac{SM}, it is the defining feature of a \ac{GUT}.
+theory.tex:843:\todoi{beta function and gauge unification expressions}
+theory.tex-844-
+--
+theory.tex-932-
+theory.tex:933:\todoi{use nuhm reference from KO, YS, JH to derive MA and mu relationships:
+theory.tex-934-explain pheno of free MH -> more DM options (+ino decays)}
