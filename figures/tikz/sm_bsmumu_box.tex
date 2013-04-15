@@ -1,0 +1,24 @@
+\documentclass[border=1cm,10pt]{standalone}
+\input{styles}
+
+\begin{document}
+
+    \begin{tikzpicture}
+        % 
+
+        % Draw the quarks
+        \draw[quark] (0,0) node[left] {$s$} -- (2,0) ;
+        \draw[aquark] (0,3) node[left] {$b$} -- (2,3) ;
+        \draw[quark] (2,0) -- (2,3) node[midway,left] {$t$};
+
+        \draw[boson] (2,0) -- (5,0) node[midway,above] {$W^{-}$} ;
+        \draw[boson] (2,3) -- (5,3) node[midway,above] {$W^{+}$} ;
+
+        \draw[aquark] (5,0) -- (5,3) node[midway,right] {$\nu_{\ell}$};
+        \draw[aquark] (5,3) -- (7,3) node[right] {$\mu^{+}$};
+        \draw[quark] (5,0) -- (7,0) node[right] {$\mu^{-}$};
+
+    \end{tikzpicture}
+
+\end{document} 
+

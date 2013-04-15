@@ -1,0 +1,17 @@
+\usepackage{tikz}
+\usetikzlibrary{arrows}
+\usetikzlibrary{decorations.pathmorphing}
+\usetikzlibrary{decorations.markings}
+
+\tikzset{
+      boson/.style={decorate, decoration={snake}, draw=black, line width=1.2},
+      higgs/.style={dashed, draw=red, line width=1.2},
+      lepton/.style={draw=blue, line width=1.2, postaction={decorate},
+            decoration={markings,mark=at position .55 with {\arrow[draw=blue]{>}}}},
+      alepton/.style={draw=blue, line width=1.2,  postaction={decorate},
+            decoration={markings,mark=at position .55 with {\arrow[draw=blue]{<}}}},
+      quark/.style={draw=blue, line width=1.2,  postaction={decorate},
+            decoration={markings,mark=at position .55 with {\arrow[draw=blue]{>}}}},
+      aquark/.style={draw=blue, line width=1.2,  postaction={decorate},
+            decoration={markings,mark=at position .55 with {\arrow[draw=blue]{<}}}},
+}
