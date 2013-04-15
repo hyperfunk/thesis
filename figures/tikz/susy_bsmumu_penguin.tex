@@ -1,0 +1,26 @@
+\documentclass[border=1cm,10pt]{standalone}
+\input{styles}
+
+\begin{document}
+
+    \begin{tikzpicture}
+        % 
+
+        % Draw the quarks
+        \draw[quark] (0,0) node[left] {$s$} -- (2,0) ;
+        \draw[aquark] (0,3) node[left] {$b$} -- (2,3) ;
+        \draw[quark] (2,0) -- (2,3) node[midway,left] {$t$};
+
+        \draw[boson] (2,0) -- (3.5,1.5) node[midway,below,right] {$W^{-}$} ;
+        \draw[higgs] (2,3) -- (3.5,1.5) node[midway,above,right] {$H^{+}$} ;
+        \draw[higgs] (3.5,1.5) -- (5,1.5) node[midway,above] {$h^{0},A^{0},H^{0}$} ;
+
+        \draw[aquark] (5,1.5) -- (7,3) node[right] {$\mu^{+}$};
+        \draw[quark] (5,1.5) -- (7,0) node[right] {$\mu^{-}$};
+
+    \end{tikzpicture}
+
+\end{document} 
+
+
+
