@@ -31,8 +31,8 @@ ax.set_xticklabels([""]*len(ax.get_xticklabels()))
 ax.set_yticklabels([""]*len(ax.get_yticklabels()))
 ax.set_zticklabels([""]*len(ax.get_zticklabels()))
 
-ax.set_xlabel(r'$\Phi$', fontsize=18)
-ax.set_ylabel(r'$\Phi^{\dagger}$', fontsize=18)
+ax.set_xlabel(r'$\Phi_{i}$', fontsize=18)
+ax.set_ylabel(r'$\Phi_{j}$', fontsize=18)
 ax.set_zlabel(r'$V(\Phi,\Phi^{\dagger})$', fontsize=18)
 
 plt.savefig('figures/mexican_hat.pdf')
