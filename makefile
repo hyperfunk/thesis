@@ -68,6 +68,9 @@ todo:
 ic:
 	scp $(OUTPUT).pdf sr505@lx06:public_html/99/thesis_draft.pdf
 
+corrections: corrections/*.pdf
+
+
 %.pdf: %.md
 	$(MD) $(MDFLAGS) \
 		-V mainfont=$(MAINFONT) \
