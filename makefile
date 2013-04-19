@@ -9,6 +9,19 @@ TEX = pdflatex -interaction nonstopmode -jobname $(OUTPUT)
 BIB = bibtex
 VIEW = zathura
 
+MD=pandoc
+TEXENGINE=xelatex
+MDFLAGS=--latex-engine $(TEXENGINE)
+RM=rm
+
+MAINFONT="DejaVuSans"
+FONTSIZE="11pt"
+GEOMETRY="margin=1in"
+
+
+
+.SUFFIXES: .pdf .md
+
 $(OUTPUT).pdf: $(INPUT).tex mythesis.sty mythesis.cls chapters/*.tex
 	( \
 	$(TEX) $(INPUT); \
@@ -54,3 +67,10 @@ todo:
 
 ic:
 	scp $(OUTPUT).pdf sr505@lx06:public_html/99/thesis_draft.pdf
+
+%.pdf: %.md
+	$(MD) $(MDFLAGS) \
+		-V mainfont=$(MAINFONT) \
+		-V geometry=$(GEOMETRY) \
+		-V fontsize=$(FONTSIZE) \
+		-o $@ $<
