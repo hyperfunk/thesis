@@ -18,7 +18,7 @@
 
 * ~~Explain naturalness section~~
 
-* Explain mneu vs m12 relationship
+* ~~Explain mneu vs m12 relationship~~
 
 ### Detector
 
