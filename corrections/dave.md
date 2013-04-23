@@ -13,3 +13,9 @@
 * ~~Remove early QED paragrah~~
 
 * Do more references!
+
+### Detector
+
+### Analysis
+
+### MasterCode
