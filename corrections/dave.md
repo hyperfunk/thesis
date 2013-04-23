@@ -16,7 +16,7 @@
 
 * ~~Remove early QED paragrah~~
 
-* Explain naturalness section
+* ~~Explain naturalness section~~
 
 * Explain mneu vs m12 relationship
 
