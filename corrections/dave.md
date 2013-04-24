@@ -1,5 +1,9 @@
 ## Corrections from D.Colling
 
+### General
+
+* DO MORE REFERENCES!
+
 ### Theory
 
 * ~~Include discussion of handedness~~
@@ -8,11 +12,13 @@
 
 * ~~More detail on SSB and higgs mechanism~~
 
-* Add in Beta functions and discussions of gauge unification (RGEs)
+* ~~Add in Beta functions and discussions of gauge unification (RGEs)~~
 
 * ~~Remove early QED paragrah~~
 
-* Do more references!
+* ~~Explain naturalness section~~
+
+* ~~Explain mneu vs m12 relationship~~
 
 ### Detector
 
