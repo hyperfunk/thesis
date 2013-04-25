@@ -6,7 +6,7 @@ DATE   = $(shell date "+%d%b")
 OUTPUT = drafts/thesis_draft_$(DATE)
 
 TEX = pdflatex -interaction nonstopmode -jobname $(OUTPUT)
-BIB = bibtex
+BIB = biber --bblsafechars
 VIEW = zathura
 
 MD=pandoc

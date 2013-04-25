@@ -23,7 +23,7 @@
 \RequirePackage{graphicx}
 \RequirePackage{mythesis} %% my custom .sty packages
 \RequirePackage{mythesismath}
-\RequirePackage{cite}
+%\RequirePackage{cite}
 \RequirePackage{verbatim}
 \RequirePackage{nicefrac}
 \RequirePackage{fancyhdr}
@@ -172,5 +172,5 @@
 \DeclareRobustCommand{\FigureRef}[1]{\Figure~\ref{#1}}
 \DeclareRobustCommand{\TableRef}[1]{\Table~\ref{#1}}
 \DeclareRobustCommand{\EquationRef}[1]{\Equation~\eqref{#1}}
-\DeclareRobustCommand{\ReferenceRef}[1]{\Reference~\cite{#1}}
+%\DeclareRobustCommand{\ReferenceRef}[1]{\Reference~\cite{#1}}
 \DeclareRobustCommand{\PageRef}[1]{\Page~\pageref{#1}}
