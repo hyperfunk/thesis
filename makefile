@@ -6,7 +6,7 @@ DATE   = $(shell date "+%d%b")
 OUTPUT = drafts/thesis_draft_$(DATE)
 
 TEX = pdflatex -interaction nonstopmode -jobname $(OUTPUT)
-BIB = biber --bblsafechars
+BIB = biber
 VIEW = zathura
 
 MD=pandoc
@@ -34,6 +34,9 @@ $(OUTPUT).pdf: $(INPUT).tex mythesis.sty mythesis.cls chapters/*.tex
 
 clean::
 	rm -fv *.aux chapters/*.aux *.log *.bbl *.blg *.toc *.fls *.cut *.out *.lot *.lof thesis_*.pdf
+
+bib:  	thesis.bib
+	$(BIB) $(OUTPUT)
 
 show: $(OUTPUT).pdf
 	$(VIEW) $(OUTPUT).pdf &
