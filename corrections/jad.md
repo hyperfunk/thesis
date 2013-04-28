@@ -12,5 +12,3 @@
   from impact of searches
 
 * Group pspacetables with text better
-
-* Possibly add "increasing impact" plot from Kees
