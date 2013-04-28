@@ -6,7 +6,7 @@
 
 * ~~Add in validation plot for M^-4 scaling~~
 
-* Add in example grid plot
+* ~~Add in example grid plot~~
 
 * Discuss impact and theoretical motivation for compressed spectra and 3rd gen
   from impact of searches
