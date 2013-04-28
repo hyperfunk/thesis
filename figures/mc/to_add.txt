@@ -1,7 +1,0 @@
-nuhm1_mh0_prelhc.pdf
-nuhm1_mh0_postlhc.pdf
-nuhm1_postlhc_menu1_ssicm.pdf
-
-cmssm_mh0_prelhc.pdf
-cmssm_mh0_postlhc.pdf
-cmssm_postlhc_menu1_ssicm.pdf
