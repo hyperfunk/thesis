@@ -167,7 +167,7 @@
 
 %% Reference terms with built-in reference
 \DeclareRobustCommand{\ChapterRef}[1]{\Chapter~\ref{#1}}
-\DeclareRobustCommand{\SectionRef}[1]{\Section~\ref{#1}}
+\DeclareRobustCommand{\SectionRef}[1]{\Section~\cref{#1}}
 \DeclareRobustCommand{\AppendixRef}[1]{\Appendix~\ref{#1}}
 \DeclareRobustCommand{\FigureRef}[1]{\Figure~\ref{#1}}
 \DeclareRobustCommand{\TableRef}[1]{\Table~\ref{#1}}
