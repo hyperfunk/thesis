@@ -54,7 +54,7 @@ spell:
 summary:
 	./texcount.pl -inc -html -v -sum $(INPUT).tex > \
 		$(OUTPUT).html
-	dwb file://$(CURDIR)/$(OUTPUT).html
+	dwb -n file://$(CURDIR)/$(OUTPUT).html
 
 shortsum:
 	@./texcount.pl -inc -brief $(INPUT).tex 2>&1 | \
