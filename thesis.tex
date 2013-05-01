@@ -11,15 +11,6 @@
 \defbibentryset{bsgth}{bsgth1,bsgth2,bsgth3,bsgth4,bsgth5}
 \defbibentryset{SuFla}{SuFla1,SuFla2}
 
-%% -------------------------------------
-%% Standard packages
-%% -------------------------------------
-
-%\usepackage{layout} 
-
-%% -------------------------------------
-%% Config
-%% -------------------------------------
 \linespread{1.3}
 
 %% PDF metadata
@@ -43,70 +34,46 @@
 \title{A search for supersymmetry using the \aT variable with the CMS detector
     and the impact of experimental searches for supersymmetry on supersymmetric
 parameter space}
-%%\title{t}
 \author{Samuel Rogerson}
-%% -------------------------------------
-%% Content
-%% -------------------------------------
 
-%% Start the document
 \begin{document}
-%\layout
 
-%% Define the un-numbered front matter (cover pages, rubrik and TOC)
-%\frontmatter
-  %\input{chapters/front.tex}
-
-%% Start the content body of the thesis
-%\mainmatter
 \setcounter{page}{1}
-\pagenumbering{roman}
-  \maketitle
-  \begin{abstract}
+    \maketitle
+    \begin{abstract}
 
-      A search for supersymmetry in final states with jets and missing
-      transverse energy is performed in pp collisions at a centre-of-mass energy
-      of $\sqrt{s}=7\TeV$. The data sample corresponds to $4.98\invfemtobarn$
-      collected by the CMS experiment at the LHC in 2011.  A dimensionless
-      kinematic variable is used as the main discriminant between genuine and
-      misreconstructed signal events. The search is performed in a signal region
-      binned according to the scalar sum of the transverse energy of jets and
-      the number of jets identified as originating from a bottom quark.  The
-      limits are presented in the parameter space of the \ac{cMSSM} as well as
-      in simplified models with particular attention paid to compressed spectra
-      and third-generation models.
+        A search for supersymmetry in final states with jets and missing
+        transverse energy is performed in pp collisions at a centre-of-mass
+        energy of $\sqrt{s}=7\TeV$. The data sample corresponds to
+        $4.98\invfemtobarn$ collected by the CMS experiment at the LHC in 2011.
+        A dimensionless kinematic variable is used as the main discriminant
+        between genuine and misreconstructed signal events. The search is
+        performed in a signal region binned according to the scalar sum of the
+        transverse energy of jets and the number of jets identified as
+        originating from a bottom quark.  The limits are presented in the
+        parameter space of the \ac{cMSSM} as well as in simplified models with
+        particular attention paid to compressed spectra and third-generation
+        models.
 
-      Global frequentist fits to the \ac{cMSSM} and NUHM1 are also performed
-      using the \Mastercode framework incorporating recent experimental
-      constraints, including those presented here.  Global likelihood contours
-      are presented in the parameter planes of both the \ac{cMSSM} and NUHM1, as
-      well as a selection of 1D likelihood functions for observables.
+        Global frequentist fits to the \ac{cMSSM} and NUHM1 are also performed
+        using the \Mastercode framework incorporating recent experimental
+        constraints, including those presented here.  Global likelihood contours
+        are presented in the parameter planes of both the \ac{cMSSM} and NUHM1,
+        as well as a selection of 1D likelihood functions for observables.
   
-  \end{abstract}
+    \end{abstract}
   
-  \tableofcontents \listoffigures
+    \tableofcontents \listoffigures
 
-\newpage
-\pagenumbering{arabic}
-\setcounter{page}{1}
-  \include{chapters/introduction}
-  \include{chapters/theory}
-  \include{chapters/detector}
-  \include{chapters/analysis}
-  \include{chapters/constraining_models}
-  %\include{chapters/future_prospects}
-  \include{chapters/conclusion}
+    \newpage
 
-%% Produce the appendices
-%\appendix
-  %\include{chapters/appendix}
-%
-%% Produce the un-numbered back matter (e.g. colophon,
-%% bibliography, tables of figures etc., index...)
-%\backmatter
-  %\input{chapters/end}
-  %\bibliographystyle{plain}
-  %\bibliography{thesis}
+    \include{chapters/introduction}
+    \include{chapters/theory}
+    \include{chapters/detector}
+    \include{chapters/analysis}
+    \include{chapters/constraining_models}
+    \include{chapters/conclusion}
+
     \printbibliography
 
 \end{document}
