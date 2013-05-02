@@ -16,9 +16,7 @@
 %% ========================================================================
 %% Base class and packages
 %% ========================================================================
-%\LoadClass[a4paper,12pt]{book}
 \LoadClass[twoside,openright,a4paper,12pt]{report}
-%\LoadClass[a4paper,12pt]{report}
 
 \RequirePackage{graphicx}
 \RequirePackage{mythesis} %% my custom .sty packages
@@ -75,8 +73,8 @@
 \pagestyle{fancy}
 
 %% Normal headers and footers (headers are all like RH pages for oneside)
-\fancyhead[RO,R]{\bfseries\thepage}%
-\fancyhead[LO,L]{\bfseries\leftmark}%
+\fancyhead[RO,LE]{\bfseries\thepage}%
+\fancyhead[LO,RE]{\bfseries\leftmark}%
 \fancyfoot{}%
 
 %% Headers and footers for plain (blank) pages
