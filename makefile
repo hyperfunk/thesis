@@ -72,6 +72,11 @@ ic:
 
 corrections: corrections/*.pdf
 
+printable:
+	pdf2ps $(OUTPUT).pdf $(OUTPUT).ps
+	psnup -pa4 -2 $(OUTPUT).ps printable.ps
+	rm $(OUTPUT).ps
+
 
 %.pdf: %.md
 	$(MD) $(MDFLAGS) \
