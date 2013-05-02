@@ -17,7 +17,7 @@
 %% Base class and packages
 %% ========================================================================
 %\LoadClass[a4paper,12pt]{book}
-\LoadClass[a4paper,12pt]{report}
+\LoadClass[twoside,openright,a4paper,12pt]{report}
 %\LoadClass[a4paper,12pt]{report}
 
 \RequirePackage{graphicx}
@@ -38,15 +38,16 @@
 
 %% from hepthesis
 %\setlength{\parindent}{17pt}          % tweak the initial indent in paras
-\setlength{\parskip}{8.5pt}            % tweak the intra-para gap size
+%\setlength{\parskip}{8.5pt}            % tweak the intra-para gap size
 %\setlength{\topmargin}{0pt}
 %\setlength{\textheight}{648pt}
 %\setlength{\footskip}{36pt}
 %\setlength{\textwidth}{446pt}
+\setlength{\textwidth}{451pt}
 
 %% equal margins
-%\setlength{\oddsidemargin}{2pt}
-%\setlength{\evensidemargin}{\oddsidemargin}
+\setlength{\oddsidemargin}{0pt}
+\setlength{\evensidemargin}{\oddsidemargin}
 
 %%% Increase inner margins for binding
 %\newlength{\@bindextramargin}
@@ -55,12 +56,12 @@
 %\addtolength{\evensidemargin}{-\@bindextramargin}
 
 %% not sure what to set for these
-\setlength{\headheight}{29pt}
+\setlength{\headheight}{15pt}
 %\setlength{\headsep}{25pt}
 
 %% not sure what to set for these
 %\setlength{\marginparsep}{0pt}
-%\setlength{\marginparwidth}{0pt}
+\setlength{\marginparwidth}{75pt}
 %\setlength{\marginparpush}{0pt}
 
 %% for the front matter pages
