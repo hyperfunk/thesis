@@ -73,6 +73,7 @@ printable:
 	pdf2ps $(OUTPUT).pdf $(OUTPUT).ps
 	psnup -pa4 -2 $(OUTPUT).ps printable.ps
 	rm $(OUTPUT).ps
+	ps2pdf printable.ps printable.pdf && rm printable.ps
 
 
 %.pdf: %.md
