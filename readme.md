@@ -1,6 +1,4 @@
-## A search for supersymmetry using the αT variable with the CMS detector \
-and the impact of experimental searches for supersymmetry on supersymmetric \
-parameter space
+## A search for supersymmetry using the αT variable with the CMS detector and the impact of experimental searches for supersymmetry on supersymmetric parameter space
 
 A search for supersymmetry in final states with jets and missing
 transverse energy is performed in pp collisions at a centre-of-mass
