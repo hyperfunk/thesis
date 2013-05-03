@@ -64,9 +64,6 @@ push:
 	cd chapters; git push origin master
 	git push origin master
 
-todo:
-	@cd chapters; git grep --color=never -n1 cite{null} > ../citations.todo
-
 ic:
 	scp $(OUTPUT).pdf sr505@lx06:public_html/99/thesis_draft.pdf
 
