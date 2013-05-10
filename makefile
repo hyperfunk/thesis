@@ -75,6 +75,9 @@ printable:
 	rm $(OUTPUT).ps
 	ps2pdf printable.ps printable.pdf && rm printable.ps
 
+final:
+	cp $(OUTPUT).pdf thesis.pdf
+
 
 %.pdf: %.md
 	$(MD) $(MDFLAGS) \

@@ -64,8 +64,8 @@
 %\setlength{\marginparpush}{0pt}
 
 %% for the front matter pages
-%\newlength{\@frontmattertopskip}
-%\setlength{\@frontmattertopskip}{55pt}  % Add a little extra space at top of front matter pages
+\newlength{\@frontmattertopskip}
+\setlength{\@frontmattertopskip}{55pt}  % Add a little extra space at top of front matter pages
 
 %% ========================================================================
 %% Headers and footers
