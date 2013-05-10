@@ -3,9 +3,10 @@
 \DeclareUnicodeCharacter{00A0}{ }
 \usepackage[parfill]{parskip}
 \usepackage{changepage}
-\usepackage{float}
+\usepackage{float,titling}
 \usepackage[section,above]{placeins}
 \usepackage{url}
+\usepackage{abstract}
 
 \usepackage[style=numeric,bibstyle=numeric,mcite=true]{biblatex}
 
@@ -49,7 +50,20 @@ parameter space}
 
 \begin{document}
 
-    \maketitle
+    \thispagestyle{empty}%
+    \begin{center}%
+      \vspace*{2cm}%
+      \begin{doublespace}%
+        {\Huge\textbf{\thetitle}}\\%
+      \end{doublespace}%
+      \vspace*{3cm}%
+      {\Large{{\theauthor} \\ {Imperial College London \\
+        High Energy Physics Department}}}\\%
+      \vspace*{6cm}%
+      {A thesis submitted to Imperial College London \\ for the degree of
+      Doctor of Philosophy}
+    \end{center}%
+    
     \begin{abstract}
 
         A search for supersymmetry in final states with jets and missing
@@ -73,8 +87,8 @@ parameter space}
         functions for observables.
   
     \end{abstract}
-  
-\setcounter{page}{3} \tableofcontents \listoffigures
+
+    \setcounter{page}{3} \tableofcontents \listoffigures
 
     \newpage
     \acresetall

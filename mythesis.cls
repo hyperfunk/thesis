@@ -18,6 +18,7 @@
 %% ========================================================================
 \LoadClass[twoside,openright,a4paper,12pt]{report}
 
+\RequirePackage{titling}
 \RequirePackage{graphicx}
 \RequirePackage{mythesis} %% my custom .sty packages
 \RequirePackage{mythesismath}
