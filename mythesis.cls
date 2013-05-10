@@ -110,9 +110,8 @@
 %}{ }
 
 \newenvironment{declaration}{%
-  \cleardoublepage%
   \vspace*{\@frontmattertopskip}%
-  \thispagestyle{plain}%
+  \thispagestyle{empty}%
   \begin{center}%
     {\LARGE\textbf{Declaration}}%
   \end{center}%
