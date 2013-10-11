@@ -11,6 +11,7 @@
 
 
 ### Long 2: Define how ET is calculated in the candidates analysis
+### Long 4: Define how MET is calculated
 ### Allanach 1:  Precisely define ET and ETmiss
  
     For the purpose of the analysis presented here the transverse energy, \ET, is
@@ -24,7 +25,7 @@
     
  
 
-### Allenach 2: Incorrect parentheses
+### Allanach 2: Incorrect parentheses
 
         M_{T}^{2} = \parenths{\sum{\ET^{j_{i}}}}^{2}
             - \parenths{\sum{P_{x}^{j_{i}}}}^{2} 
@@ -42,12 +43,6 @@
     The acceptance for an identified object is defined as the set of kinematic
     requirements for the object to be included in the signal or control region
     
-
-### Long 5: PT 2. Add citation justify modelling of MC (see also Long 1)
- 
-    the signal sample denoted $MC_{\Zinv}$ and $MC_{\ttW}$.  The \ac{MC} simulations
-    used on \ac{CMS} analyses have been validated extensively \cite{mcvalidation}.
- 
 ### Long 5: PT 1. Define POIS
 
 ### Allanach 7: Define POIS and Gaus
@@ -62,6 +57,23 @@
     $\sigma_{X}$ are the uncertainties on their respective $\rho_{X}$ terms.
 
 
+
+### Long 5: PT 2. Add citation justify modelling of MC (see also Long 1)
+ 
+    the signal sample denoted $MC_{\Zinv}$ and $MC_{\ttW}$.  The \ac{MC} simulations
+    used on \ac{CMS} analyses have been validated extensively \cite{mcvalidation}.
+
+### Long 6: Define Isolation
+
+### Allanach 9: Define isolation
+
+    jets ($b$-quark and $\tau$ jets in particular) as well as hard
+    isolated\footnote{An object is isolated when the energy associated with the
+    object is above a object type-dependant fraction of the total energy within a cone
+    surrounding the object.} photons
+    for instance, from \ac{GMSB} like models of \ac{SUSY}).
+
+ 
 ### Long 7: Clarify reason for slackening of x-sec limit for low mParent, mLSP
  
     $\pm 1 \sigma$ experimental uncertainty regions respectively. 
@@ -74,26 +86,25 @@
     the limit that can be put on the cross-section for processes in this region of
     parameter space.
 
+### Long 8: revise wording of P(A) in frequentist approach
 
-### Allanach 13: Add caveat about apparent bimodality being related to sampling
+Uncertain that a rewording would be more clear or accurate.  Equation 5.2 and
+the subsequent explanation defines frequentist probability.
  
-    likelihood.  It should be noted that with sufficient further sampling the
-    obvious delineation of the two modes would likely disappear due to the
-    flattening of the global \chisq function.  Given that the \ac{NUHM}1 provides a
-    region at low \mZero not accessible in the \ac{cMSSM},  where multiple processes
-    combine to satisfy the relic abundance constraint, it would be prudent, though
-    computationally complex, to investigate the \ac{NUHM}2.  Here the decoupling of
-    \mHud allows for even greater control over the neutralino masses (allowing us to
-    exchange the bino-like neutralino \ac{LSP} for a higgsino-like neutralino
-    \ac{LSP}) and hence is likely to open up a much richer variation of
-    phenomenology that remaining consistent with other constraints.
- 
-### Long 9: PT 1. Define DeltaAlphaHad
+### Long 9: Define DeltaAlpha and motivate choise of nuisance parameters
 
-    the hadronic contribution to the electromagnetic coupling constant, evaluated at
-    scale $Q^{2}=M_{Z}^{2}$, and $m_{t}$ and $m_{Z}$ are the mass of the top quark
-    and Z-boson respectively.
- 
+    $\Delta\alpha_{\textrm{had}}$ is the hadronic contribution to the shift in
+    the electromagnetic fine structure constant, evaluated at scale
+    $Q^{2}=M_{Z}^{2}$, and $m_{t}$ and $m_{Z}$ are the mass of the top quark and
+    Z-boson respectively.  Originally these three parameters were chosen as they
+    encapsulate the vast majority of the sensitivty of the observable in the
+    early analyses as well as being well controlled experimentally.  Now that
+    the analysis is more mature and more observables are included it will become
+    necessary to re-examine and extend this set of parameters, including e.g.
+    $\alpha_{S}$ the strong coupling constant to which for instance the
+    B-physics observables would be sensitive.  However at this time, a full
+    resampling with a new nuisance parameter was computationally prohibitive.
+
 ### Long 10: Summarise the role of Minuit in the procedure following MCMC sampling
 
     minimization of the $\chi^{2}$ with respect to the constraints. The point with
@@ -118,9 +129,11 @@
             with ``plane'' in the final column are implemented as described in
             \EquationRef{eq:simplelikelihood}  {\it note: \R{x} is used to
      denote $x^{\rm EXP}/x^{\rm SM}$}\label{tab:observables}}
- \end{table}
- 
- 
+
+### Long 12: Distinguish X^2 from Likelihood rigorously
+
+Changes carried out
+
 ### Long 13: Revise description of X^2(SUSY Search limits) to explain precisely what was done
 
     Each of these is treated as a one-sided Gaussian lower limit with
@@ -139,12 +152,6 @@
     radial lines in the \mZeromHalf plane the effective event rate scales as
     $\mathcal{M}^{-4}$.  
 
-
-### Allanach 8: Caption too low on Fig 5.8
-
-        \begin{subfigure}[]{0.50\textwidth}
-
-
 ### Long 15: Add discussion of where equation 5.24 (now 5.25) is a good approximation
 
     have approximately the same production cross-section and decay widths). On top
@@ -152,18 +159,6 @@
     break down, at higher value of \m{\PHiggsps} and \tanbeta, is out of the range
     of the impact of the search considered here\cite{mc7} hence this approximation
     is valid and verified for all regions important to the analysis presented here.
- 
-### Allanach 11: PT 1. Misplaced 1
-
-    though in the \ac{NUHM}1 for $\mNeu\sim1000\GeV$ there is an upper region
-
-### Allanach 11: PT 2. State what happens to the h-pole region after LHC higgs constraints
-
-    It should also be noted that this light higgs funnel region continues to
-    exist up to high values of \mZero where the conditions for \ac{EWSB} break down.
-    Noting that $\mh\simeq 121\GeV$ in the funnel, this region is not strongly
-    disfavored by the \ac{LHC} light higgs constraints, as such one expects this
-    funnel to continue to be present in future analyses.
  
 ###  Long 16: Add discussion of best fit points and their limitations (recent focus point work still not published)
 
@@ -175,12 +170,63 @@
     model may have zero sensitivity to. However by adding these constraints into
     consideration the value of $n_{\textrm{dof}}$ is increased with no corresponding
     change to \chisq thereby forcing $P$ to decrease.
+
+### Allanach 4: Shouldn't the figure say more QCD like? (Fig 4.2 pg 74)
+
+This is a "CMS blessed" plot from an approved analysis note(citation 109).
+Unable to change blessed plots in public documents.
+
+### Allanach 5: Misplaced parenthesis in eq 4.11 pg 76
+
+Fixed
+
+### Allanach 6: Typo pg 79
+
+Fixed
  
 
-### Allanach 9: Define isolation
+### Allanach 8: Caption too low on Fig 5.8
 
-    jets ($b$-quark and $\tau$ jets in particular) as well as hard
-    isolated\footnote{An object is isolated when the energy associated with the
-    object is above a object type-dependant fraction of the total energy within a cone
-    surrounding the object.} photons
-    for instance, from \ac{GMSB} like models of \ac{SUSY}).
+        \begin{subfigure}[]{0.50\textwidth}
+
+### Allanach 10: Phase space to parameter space, and correction on MA vs MH pg 130
+
+Fixed, now pg 131
+
+### Allanach 11: PT 1. Misplaced 1
+
+    though in the \ac{NUHM}1 for $\mNeu\sim1000\GeV$ there is an upper region
+
+### Allanach 11: PT 2. State what happens to the h-pole region after LHC higgs constraints
+
+    It should also be noted that this light higgs funnel region continues to
+    exist up to high values of \mZero where the conditions for \ac{EWSB} break down.
+    Noting that $\mh\simeq 121\GeV$ in the funnel, this region is not strongly
+    disfavored by the \ac{LHC} light higgs constraints, as such one expects this
+    funnel to continue to be present in future analyses.
+
+### Allanach 12: "teh" p140 3rd para
+
+Fixed, now pg 141
+
+### Allanach 13: Add caveat about apparent bimodality being related to sampling
+ 
+    likelihood.  It should be noted that with sufficient further sampling the
+    obvious delineation of the two modes would likely disappear due to the
+    flattening of the global \chisq function.  Given that the \ac{NUHM}1 provides a
+    region at low \mZero not accessible in the \ac{cMSSM},  where multiple processes
+    combine to satisfy the relic abundance constraint, it would be prudent, though
+    computationally complex, to investigate the \ac{NUHM}2.  Here the decoupling of
+    \mHud allows for even greater control over the neutralino masses (allowing us to
+    exchange the bino-like neutralino \ac{LSP} for a higgsino-like neutralino
+    \ac{LSP}) and hence is likely to open up a much richer variation of
+    phenomenology that remaining consistent with other constraints.
+
+### Allanach 14: typo pg 22 "relatioship"
+
+Fixed
+
+### Allanach 15: Explain what theta is in eq 2.55 on page 30
+
+Theta defined as angle between incident and scattered W+ particles (as in
+citation)
