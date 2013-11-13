@@ -77,7 +77,16 @@ printable:
 
 final:
 	cp $(OUTPUT).pdf thesis.pdf
-
+	gs			 \
+	   -dEmbedAllFonts=true  \
+	   -dCompressFonts=true  \
+	   -dSubsetFonts=true	 \
+	   -dNOPAUSE 		 \
+	   -dBATCH 		 \
+	   -sDEVICE=pdfwrite	 \
+	   -sOutputFile=thesis_embed.pdf \
+	   -c ".setpdfwrite <</NeverEmbed [ ]>> setdistillerparams" \
+	   -f thesis.pdf
 
 %.pdf: %.md
 	$(MD) $(MDFLAGS) \
