@@ -3,7 +3,7 @@
 ### Long 1: Add short discussion on MC
 
     $N_{DY}$, $N_{\textrm{top}}$ and $N_{\textrm{di-boson}}$ respectively. These are
-    produced in teh following way.  The \Wjets and \Znunujets are simulated using
+    produced in the following way.  The \Wjets and \Znunujets are simulated using
     \MADGRAPH\cite{madgraph} event generator.  The \ttbarjets and single-top events
     are generated using \POWHEG\cite{powheg}.  The di-boson events are produced with
     \PYTHIA\cite{pythia}.  All parton showering and hadronisation processes are
